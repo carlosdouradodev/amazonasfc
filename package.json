@@ -1,0 +1,24 @@
+{
+  "name": "amazonas-fc-digital",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "scrape:flashscore": "node scripts/scrape-flashscore.mjs",
+    "watch:flashscore": "node scripts/watch-flashscore.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "latest",
+    "@vitejs/plugin-react": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "framer-motion": "^12.38.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "vite": "latest",
+    "vue": "latest"
+  }
+}
