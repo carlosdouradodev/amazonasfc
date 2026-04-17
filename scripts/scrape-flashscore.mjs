@@ -10,6 +10,7 @@ const LOGO_OUTPUT_PATH = "public/team-logos";
 const LOGO_PUBLIC_PATH = "/team-logos";
 const TEAM_FIXTURES_URL = "https://www.flashscore.com/team/amazonas/zk9LAfeq/fixtures/";
 const SERIE_C_RESULTS_URL = "https://www.flashscore.com/football/brazil/serie-c/results/";
+const FLASHSCORE_FEED_URL = "https://www.flashscore.com/x/feed";
 const LOGO_BASE_URL = "https://static.flashscore.com/res/image/data";
 
 const NAME_FIXES = new Map([
@@ -132,6 +133,26 @@ async function fetchHtml(url) {
   return response.text();
 }
 
+async function fetchFlashscoreFeed(feedName, feedSign, referer) {
+  const response = await fetch(`${FLASHSCORE_FEED_URL}/${feedName}`, {
+    headers: {
+      "accept": "*/*",
+      "accept-language": "en-US,en;q=0.9",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "referer": referer,
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36",
+      "x-fsign": feedSign,
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Flashscore feed returned ${response.status} for ${feedName}`);
+  }
+
+  return response.text();
+}
+
 async function downloadLogo(file, outputDir) {
   const response = await fetch(`${LOGO_BASE_URL}/${file}`, {
     headers: {
@@ -182,8 +203,7 @@ async function downloadLogos({ fixtures, results, standings, repoRoot }) {
 }
 
 function extractInitialFeed(html, feedName) {
-  const marker = `cjs.initialFeeds["${feedName}"]`;
-  const markerIndex = html.indexOf(marker);
+  const markerIndex = findInitialFeedIndex(html, feedName);
   if (markerIndex < 0) {
     throw new Error(`Missing Flashscore feed: ${feedName}`);
   }
@@ -201,6 +221,96 @@ function extractInitialFeed(html, feedName) {
   }
 
   return html.slice(start, end);
+}
+
+function findInitialFeedIndex(html, feedName) {
+  const doubleQuoted = html.indexOf(`cjs.initialFeeds["${feedName}"]`);
+  if (doubleQuoted >= 0) {
+    return doubleQuoted;
+  }
+
+  return html.indexOf(`cjs.initialFeeds['${feedName}']`);
+}
+
+function extractInitialFeedInfo(html, feedName) {
+  const markerIndex = findInitialFeedIndex(html, feedName);
+  if (markerIndex < 0) {
+    return {};
+  }
+
+  const dataMarker = "data: `";
+  const dataIndex = html.indexOf(dataMarker, markerIndex);
+  if (dataIndex < 0) {
+    return {};
+  }
+
+  const dataEnd = html.indexOf("`,", dataIndex + dataMarker.length);
+  const blockEnd = html.indexOf("}", dataEnd);
+  const block = html.slice(dataEnd, blockEnd > dataEnd ? blockEnd : dataEnd + 500);
+
+  return {
+    allEventsCount: Number(block.match(/allEventsCount:\s*(\d+)/)?.[1] ?? 0),
+    seasonId: block.match(/seasonId:\s*(\d+)/)?.[1] ?? "",
+  };
+}
+
+function extractResultsFeedMeta(html, feedName) {
+  const initialInfo = extractInitialFeedInfo(html, feedName);
+
+  return {
+    allEventsCount: initialInfo.allEventsCount,
+    seasonId: initialInfo.seasonId,
+    countryId: html.match(/country_id\s*=\s*(\d+)/)?.[1] ?? html.match(/"country_id":\s*(\d+)/)?.[1] ?? "",
+    tournamentId: html.match(/tournament_id\s*=\s*"([^"]+)"/)?.[1] ?? html.match(/"tournament_id":\s*"([^"]+)"/)?.[1] ?? "",
+    timezone: html.match(/default_tz\s*=\s*(-?\d+)/)?.[1] ?? "2",
+    lang: html.match(/<html lang="([^"]+)"/)?.[1] ?? "en",
+    projectId: html.match(/project_id\s*=\s*(\d+)/)?.[1] ?? html.match(/"project_id":\s*"?(\d+)/)?.[1] ?? "2",
+    feedSign: html.match(/"feed_sign":"([^"]+)"/)?.[1] ?? "SW9D1eZo",
+  };
+}
+
+function buildFullResultsFeedName(meta) {
+  if (!meta.seasonId || !meta.countryId || !meta.tournamentId) {
+    return "";
+  }
+
+  return `tr_${[
+    1,
+    meta.countryId,
+    meta.tournamentId,
+    meta.seasonId,
+    "0",
+    meta.timezone,
+    meta.lang,
+    meta.projectId,
+  ].join("_")}`;
+}
+
+async function loadCompleteResults(resultsHtml) {
+  const feedName = findInitialFeedIndex(resultsHtml, "results") >= 0 ? "results" : "summary-results";
+  const initialFeed = extractInitialFeed(resultsHtml, feedName);
+  const initialResults = parseResults(initialFeed);
+  const meta = extractResultsFeedMeta(resultsHtml, feedName);
+  const fullResultsFeedName = buildFullResultsFeedName(meta);
+
+  if (!meta.allEventsCount || initialResults.length >= meta.allEventsCount || !fullResultsFeedName) {
+    return {
+      results: initialResults,
+      expectedResults: meta.allEventsCount || initialResults.length,
+      fullResultsFetched: false,
+      fullResultsFeedName,
+    };
+  }
+
+  const fullFeed = await fetchFlashscoreFeed(fullResultsFeedName, meta.feedSign, SERIE_C_RESULTS_URL);
+  const fullResults = parseResults(fullFeed);
+
+  return {
+    results: fullResults.length >= initialResults.length ? fullResults : initialResults,
+    expectedResults: meta.allEventsCount,
+    fullResultsFetched: fullResults.length >= initialResults.length,
+    fullResultsFeedName,
+  };
 }
 
 function parseFeedRecords(feed) {
@@ -407,7 +517,7 @@ function buildRecentResults(results) {
     });
 }
 
-function toModule({ source, status, standings, fixtures, recentResults }) {
+function toModule({ source, status, standings, fixtures, simulationFixtures, recentResults }) {
   return `// Generated by npm run scrape:flashscore. Do not edit by hand.
 export const competitionSource = ${JSON.stringify(source, null, 2)};
 
@@ -415,7 +525,11 @@ export const serieCStatus = ${JSON.stringify(status, null, 2)};
 
 export const serieCStandings = ${JSON.stringify(standings.slice(0, 8), null, 2)};
 
+export const serieCFullStandings = ${JSON.stringify(standings, null, 2)};
+
 export const upcomingSerieC = ${JSON.stringify(fixtures.slice(0, 6), null, 2)};
+
+export const serieCSimulationMatches = ${JSON.stringify(simulationFixtures.slice(0, 10), null, 2)};
 
 export const recentSerieCResults = ${JSON.stringify(recentResults.slice(0, 3), null, 2)};
 `;
@@ -428,7 +542,15 @@ async function main() {
   ]);
 
   const fixtures = parseFixtures(extractInitialFeed(fixturesHtml, "summary-fixtures"));
-  const results = parseResults(extractInitialFeed(resultsHtml, "summary-results"));
+  const simulationFeedName = findInitialFeedIndex(resultsHtml, "fixtures") >= 0 ? "fixtures" : "summary-fixtures";
+  const simulationFixtures = parseFixtures(extractInitialFeed(resultsHtml, simulationFeedName))
+    .filter((match) => match.competition === "Serie C");
+  const {
+    results,
+    expectedResults,
+    fullResultsFetched,
+    fullResultsFeedName,
+  } = await loadCompleteResults(resultsHtml);
   const standings = computeStandings(results);
   const recentResults = buildRecentResults(results);
   const now = new Date();
@@ -449,15 +571,20 @@ async function main() {
       scrapedAt: now.toISOString(),
       fixturesUrl: TEAM_FIXTURES_URL,
       resultsUrl: SERIE_C_RESULTS_URL,
+      fullResultsFeedName,
       teamId: TEAM_ID,
       parsedFixtures: fixtures.length,
+      parsedSimulationFixtures: simulationFixtures.length,
       parsedResults: results.length,
+      expectedResults,
+      fullResultsFetched,
       parsedAmazonasResults: recentResults.length,
       downloadedLogos,
     },
     status: buildStatus(standings, now),
     standings,
     fixtures,
+    simulationFixtures,
     recentResults,
   });
 
@@ -465,7 +592,7 @@ async function main() {
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, output, "utf8");
 
-  console.log(`Flashscore scrape ok: ${fixtures.length} fixtures, ${results.length} results, ${downloadedLogos} logos`);
+  console.log(`Flashscore scrape ok: ${fixtures.length} fixtures, ${results.length}/${expectedResults} results, ${downloadedLogos} logos`);
   console.log(`Updated ${OUTPUT_PATH}`);
 }
 

@@ -24,12 +24,13 @@ export function HomePage() {
     <main>
       <section className="hero-mask relative min-h-[92svh] overflow-hidden pt-24">
         <motion.img
-          className="absolute inset-0 z-0 h-full w-full object-cover object-[58%_48%]"
-          src={assets.trainingWide}
+          className="absolute inset-0 z-0 h-full w-full object-cover object-[54%_46%]"
+          src={assets.heroTraining}
           alt=""
           style={{ y: heroY, scale: heroScale }}
         />
-        <div className="absolute inset-0 z-[1] bg-[linear-gradient(90deg,rgba(5,4,3,.92)_0%,rgba(5,4,3,.68)_36%,rgba(5,4,3,.2)_72%),linear-gradient(180deg,rgba(5,4,3,.04)_0%,rgba(5,4,3,.32)_58%,rgba(5,4,3,.94)_100%)]" />
+        <div className="absolute inset-0 z-[1] bg-[linear-gradient(90deg,rgba(5,4,3,.94)_0%,rgba(5,4,3,.72)_38%,rgba(5,4,3,.22)_74%),linear-gradient(180deg,rgba(5,4,3,.08)_0%,rgba(5,4,3,.34)_58%,rgba(5,4,3,.95)_100%)]" />
+        <div className="amazon-pattern absolute inset-0 z-[2]" />
         <div className="grain z-[2]" />
 
         <div className="section-shell relative z-10 grid min-h-[calc(92svh-96px)] items-end pb-10 lg:pb-14">
@@ -43,7 +44,7 @@ export function HomePage() {
               Manaus, Amazonas
             </motion.p>
             <motion.h1
-              className="display text-[clamp(58px,12vw,168px)] leading-[0.82] text-paper"
+              className="display text-[clamp(52px,12vw,168px)] leading-[0.82] text-paper"
               initial={{ opacity: 0, y: 34, scale: 0.985 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ delay: 0.08, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
@@ -51,19 +52,19 @@ export function HomePage() {
               Amazonas FC
             </motion.h1>
             <motion.p
-              className="mt-6 max-w-2xl text-[clamp(20px,2.2vw,32px)] font-bold leading-tight text-paper/95"
+              className="mt-6 max-w-3xl text-[clamp(20px,2.2vw,32px)] font-bold leading-tight text-paper/95"
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
             >
-              O único campeão brasileiro do futebol amazonense.
+              Manaus joga junto. A Onça entra em campo para transformar liderança em noite de arquibancada cheia.
             </motion.p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <CTAButton href="#/socio">Entrar para a Onça</CTAButton>
-              <CTAButton href="#/matchday" variant="ghost">Ver matchday</CTAButton>
+              <CTAButton href={officialLinks.socio} external>Seja Sócio, Entre para a Onça</CTAButton>
+              <CTAButton href={officialLinks.ingressos} variant="ghost" external>Comprar ingressos</CTAButton>
             </div>
 
-            <div className="mt-10 grid max-w-5xl grid-cols-2 border border-paper/14 bg-black/62 backdrop-blur-md lg:grid-cols-4">
+            <div className="mt-10 grid max-w-5xl grid-cols-2 overflow-hidden border border-paper/14 bg-black/66 shadow-[0_24px_80px_rgba(0,0,0,.32)] backdrop-blur-md lg:grid-cols-4">
               {stats.map((item) => (
                 <StatCard item={item} key={item.label} label={item.label} value={item.value} />
               ))}
@@ -73,8 +74,6 @@ export function HomePage() {
       </section>
 
       <MatchPulseBar />
-
-      <HonorsShowcase />
 
       <CompetitionSnapshot />
 
@@ -129,6 +128,8 @@ export function HomePage() {
           </CTAButton>
         </div>
       </MotionSection>
+
+      <HonorsShowcase />
     </main>
   );
 }

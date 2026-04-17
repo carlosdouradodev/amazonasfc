@@ -1,6 +1,6 @@
 export function CTAButton({ href, children, variant = "primary", external = false, className = "" }) {
   const base =
-    "focus-ring group inline-flex min-h-11 items-center justify-center overflow-hidden rounded-[4px] px-5 py-3 text-[12px] font-extrabold uppercase tracking-[0.08em] transition duration-300";
+    "focus-ring group inline-flex min-h-11 max-w-full items-center justify-center overflow-hidden rounded-[4px] px-5 py-3 text-center text-[12px] font-extrabold uppercase leading-4 tracking-[0.08em] transition duration-300";
   const variants = {
     primary: "bg-yellow text-black shadow-[0_16px_42px_rgba(242,195,25,.18)] hover:-translate-y-0.5 hover:bg-yellow-soft",
     ghost:

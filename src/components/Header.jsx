@@ -3,6 +3,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { assets, navItems, officialLinks } from "../data/club.js";
 import { CTAButton } from "./CTAButton.jsx";
 
+const desktopNavPaths = new Set(["/", "/matchday", "/noticias", "/elenco", "/socio"]);
+const desktopNavItems = navItems.filter((item) => desktopNavPaths.has(item.path));
+
 export function Header({ route }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +24,7 @@ export function Header({ route }) {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        compact ? "border-b border-paper/10 bg-black/84 shadow-[0_20px_70px_rgba(0,0,0,.3)] backdrop-blur-2xl" : "bg-transparent"
+        compact ? "border-b border-yellow/18 bg-black/92 shadow-[0_20px_70px_rgba(0,0,0,.3)] backdrop-blur-2xl" : "border-b border-paper/10 bg-black/58 backdrop-blur-xl"
       }`}
     >
       <div
@@ -34,12 +37,12 @@ export function Header({ route }) {
           <span className="brand-wordmark display truncate text-[22px] leading-none text-paper">Amazonas FC</span>
         </a>
 
-        <nav className="hidden items-center gap-1 border border-paper/10 bg-paper/[0.025] p-1 backdrop-blur-md lg:flex" aria-label="Principal">
-          {navItems.map((item) => (
+        <nav className="hidden items-center gap-1 border border-paper/16 bg-black/38 p-1 shadow-[inset_0_0_0_1px_rgba(242,195,25,.08)] backdrop-blur-md lg:flex" aria-label="Principal">
+          {desktopNavItems.map((item) => (
             <a
               key={item.path}
-              className={`focus-ring group relative px-3 py-2 text-[11px] font-extrabold uppercase tracking-[0.08em] transition hover:text-paper ${
-                route === item.path ? "bg-yellow text-black" : "text-paper/62"
+              className={`focus-ring group relative px-3.5 py-2.5 text-[11px] font-extrabold uppercase tracking-[0.08em] transition hover:text-paper ${
+                route === item.path ? "bg-yellow text-black shadow-[inset_0_-4px_0_rgba(5,4,3,.72)]" : "text-paper/74"
               }`}
               href={`#${item.path}`}
             >

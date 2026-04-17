@@ -36,13 +36,14 @@ export const officialLinks = {
   socio: "https://socioamazonas.com.br/",
   loja: "https://www.lojadaonca.com.br/",
   site: "https://amazonasfc.com.br/site/",
+  ingressos: "https://amazonasfc.com.br/site/",
 };
 
 export const stats = [
-  { label: "Fundação", value: "2019" },
-  { label: "Campeão brasileiro", value: "Série C 2023" },
-  { label: "Bicampeão estadual", value: "2023 e 2025" },
-  { label: "Ranking CBF", value: "40º" },
+  { label: "Fundação", value: "2019", mark: "19" },
+  { label: "Campeão brasileiro", value: "Série C 2023", mark: "C", featured: true },
+  { label: "Bicampeão estadual", value: "2023 e 2025", mark: "AM" },
+  { label: "Ranking CBF", value: "40º", mark: "CBF" },
 ];
 
 export const honors = [
