@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 
 export function NewsCard({ item, large = false }) {
+  const href = item.path ? `#${item.path}` : item.href;
+  const external = !item.path;
+
   return (
     <motion.article
       className={large ? "group lg:col-span-7" : "group"}
@@ -9,7 +12,7 @@ export function NewsCard({ item, large = false }) {
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.62, ease: [0.22, 1, 0.36, 1] }}
     >
-      <a className="focus-ring block h-full" href={item.href} target="_blank" rel="noreferrer">
+      <a className="focus-ring block h-full" href={href} target={external ? "_blank" : undefined} rel={external ? "noreferrer" : undefined}>
         <div className={`relative h-full overflow-hidden border border-paper/12 bg-ink/70 ${large ? "min-h-[430px]" : ""}`}>
           <img
             className={`w-full object-cover transition duration-700 group-hover:scale-105 ${

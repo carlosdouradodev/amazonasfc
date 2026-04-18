@@ -10,8 +10,11 @@ const LOGO_OUTPUT_PATH = "public/team-logos";
 const LOGO_PUBLIC_PATH = "/team-logos";
 const TEAM_FIXTURES_URL = "https://www.flashscore.com/team/amazonas/zk9LAfeq/fixtures/";
 const SERIE_C_RESULTS_URL = "https://www.flashscore.com/football/brazil/serie-c/results/";
+const CBF_SERIE_C_URL = "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-c/2026";
 const FLASHSCORE_FEED_URL = "https://www.flashscore.com/x/feed";
 const LOGO_BASE_URL = "https://static.flashscore.com/res/image/data";
+const SOFASCORE_TEAM_ID = "336664";
+const SOFASCORE_NEXT_EVENTS_URL = `https://www.sofascore.com/api/v1/team/${SOFASCORE_TEAM_ID}/events/next/0`;
 
 const NAME_FIXES = new Map([
   ["Anapolis", "Anápolis"],
@@ -42,6 +45,24 @@ const MONTHS = new Map([
 
 function normalizeTeam(name) {
   return NAME_FIXES.get(name) ?? name;
+}
+
+function cleanText(value) {
+  return String(value ?? "").replace(/\s+/g, " ").trim();
+}
+
+function decodeHtml(value) {
+  return String(value ?? "")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;/g, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
+function stripTags(value) {
+  return cleanText(decodeHtml(String(value ?? "").replace(/<[^>]*>/g, " ")));
 }
 
 function signed(value) {
@@ -94,10 +115,12 @@ function roundLabel(value) {
 }
 
 function competitionLabel(value) {
-  return String(value ?? "")
+  const normalized = String(value ?? "")
     .replace(/^BRAZIL:\s*/i, "")
     .replace(/\s+-\s+First stage$/i, "")
     .trim();
+
+  return normalized === "Copa Norte" ? "Copa Verde" : normalized;
 }
 
 function logoFile(value) {
@@ -113,6 +136,10 @@ function logoUrl(value) {
 function logoFileFromPublicPath(value) {
   const match = String(value ?? "").match(/\/team-logos\/([^/?#]+)/);
   return match ? match[1] : "";
+}
+
+function teamPageUrl(slug, id) {
+  return `https://www.flashscore.com/team/${slug}/${id}/`;
 }
 
 async function fetchHtml(url) {
@@ -131,6 +158,24 @@ async function fetchHtml(url) {
   }
 
   return response.text();
+}
+
+async function fetchJson(url) {
+  const response = await fetch(url, {
+    headers: {
+      "accept": "application/json,text/plain,*/*",
+      "accept-language": "pt-BR,pt;q=0.9,en;q=0.8",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Request returned ${response.status} for ${url}`);
+  }
+
+  return response.json();
 }
 
 async function fetchFlashscoreFeed(feedName, feedSign, referer) {
@@ -361,11 +406,168 @@ function parseFixtures(feed) {
         away,
         homeLogo: logoUrl(record.OA),
         awayLogo: logoUrl(record.OB),
+        homeTeamId: record.PX,
+        homeTeamSlug: record.WU,
+        awayTeamId: record.PY,
+        awayTeamSlug: record.WV,
         venue: "A confirmar",
         city: "",
       };
     })
     .sort((a, b) => a.timestamp - b.timestamp);
+}
+
+function parseTeamVenue(html) {
+  const stadiumWithCity = html.match(
+    /<span class="heading__info--key">Stadium:<\/span>\s*([^<]+?)\s*<span>\(([^<]+)\)<\/span>/i,
+  );
+
+  if (stadiumWithCity) {
+    return {
+      venue: cleanText(stadiumWithCity[1]),
+      city: cleanText(stadiumWithCity[2]),
+    };
+  }
+
+  const stadiumOnly = html.match(/<span class="heading__info--key">Stadium:<\/span>\s*([^<]+)/i);
+  if (stadiumOnly) {
+    return {
+      venue: cleanText(stadiumOnly[1]),
+      city: "",
+    };
+  }
+
+  return null;
+}
+
+function sofascoreEventUrl(eventId) {
+  return `https://www.sofascore.com/api/v1/event/${eventId}`;
+}
+
+function parseSofascoreVenue(event) {
+  const venue = cleanText(event?.venue?.stadium?.name ?? event?.venue?.name ?? "");
+  const city = cleanText(event?.venue?.city?.name ?? "");
+
+  if (!venue && !city) {
+    return null;
+  }
+
+  return { venue: venue || "A confirmar", city };
+}
+
+function dayKeyFromTimestamp(timestamp) {
+  return new Date(timestamp * 1000).toISOString().slice(0, 10);
+}
+
+function matchFixtureToSofascoreEvent(fixture, events, usedIndexes) {
+  const exactIndex = events.findIndex(
+    (event, index) => !usedIndexes.has(index) && event.startTimestamp === fixture.timestamp,
+  );
+
+  if (exactIndex >= 0) {
+    usedIndexes.add(exactIndex);
+    return events[exactIndex];
+  }
+
+  const fixtureDay = dayKeyFromTimestamp(fixture.timestamp);
+  let bestIndex = -1;
+  let bestDistance = Number.POSITIVE_INFINITY;
+
+  for (const [index, event] of events.entries()) {
+    if (usedIndexes.has(index)) {
+      continue;
+    }
+
+    const distance = Math.abs(event.startTimestamp - fixture.timestamp);
+    if (distance > 12 * 60 * 60) {
+      continue;
+    }
+
+    if (dayKeyFromTimestamp(event.startTimestamp) !== fixtureDay) {
+      continue;
+    }
+
+    if (distance < bestDistance) {
+      bestDistance = distance;
+      bestIndex = index;
+    }
+  }
+
+  if (bestIndex >= 0) {
+    usedIndexes.add(bestIndex);
+    return events[bestIndex];
+  }
+
+  return null;
+}
+
+async function loadSofascoreFixtureVenues(fixtures) {
+  try {
+    const data = await fetchJson(SOFASCORE_NEXT_EVENTS_URL);
+    const events = Array.isArray(data?.events) ? data.events : [];
+    const usedIndexes = new Set();
+    const matchedFixtures = fixtures
+      .map((fixture) => [fixture, matchFixtureToSofascoreEvent(fixture, events, usedIndexes)])
+      .filter(([, event]) => event?.id);
+
+    const venues = await Promise.all(
+      matchedFixtures.map(async ([fixture, event]) => {
+        try {
+          const detail = await fetchJson(sofascoreEventUrl(event.id));
+          return [fixture.id, parseSofascoreVenue(detail?.event)];
+        } catch {
+          return [fixture.id, null];
+        }
+      }),
+    );
+
+    return new Map(venues.filter(([, venue]) => venue));
+  } catch {
+    return new Map();
+  }
+}
+
+async function loadTeamVenues(fixtures) {
+  const homeTeams = new Map(
+    fixtures
+      .filter((match) => match.homeTeamId && match.homeTeamSlug)
+      .map((match) => [match.homeTeamId, { id: match.homeTeamId, slug: match.homeTeamSlug }]),
+  );
+
+  const teamVenues = await Promise.all(
+    [...homeTeams.values()].map(async (team) => {
+      try {
+        const html = await fetchHtml(teamPageUrl(team.slug, team.id));
+        return [team.id, parseTeamVenue(html)];
+      } catch {
+        return [team.id, null];
+      }
+    }),
+  );
+
+  return new Map(teamVenues.filter(([, venue]) => venue));
+}
+
+function applyFixtureVenues(fixtures, sofascoreVenues, teamVenues) {
+  return fixtures.map((match) => {
+    const venue = sofascoreVenues.get(match.id) ?? teamVenues.get(match.homeTeamId);
+
+    return {
+      id: match.id,
+      timestamp: match.timestamp,
+      competition: match.competition,
+      round: match.round,
+      date: match.date,
+      day: match.day,
+      time: match.time,
+      home: match.home,
+      away: match.away,
+      homeLogo: match.homeLogo,
+      awayLogo: match.awayLogo,
+      venue: venue?.venue ?? match.venue,
+      city: venue?.city ?? match.city,
+    };
+  });
 }
 
 function parseResults(feed) {
@@ -383,6 +585,65 @@ function parseResults(feed) {
       awayGoals: Number(record.AH),
     }))
     .filter((match) => Number.isFinite(match.homeGoals) && Number.isFinite(match.awayGoals));
+}
+
+function resolveCbfImage(src) {
+  const raw = decodeHtml(src);
+  if (!raw) return "";
+
+  try {
+    const url = new URL(raw, CBF_SERIE_C_URL);
+    const proxied = url.searchParams.get("url");
+    return proxied ? decodeURIComponent(proxied) : url.href;
+  } catch {
+    return "";
+  }
+}
+
+function firstImageSrc(html) {
+  const src = html.match(/<img\b[^>]*\bsrc="([^"]+)"/i)?.[1] ?? "";
+  return resolveCbfImage(src);
+}
+
+function firstImageAlt(html) {
+  return cleanText(decodeHtml(html.match(/<img\b[^>]*\b(?:alt|title)="([^"]*)"/i)?.[1] ?? ""));
+}
+
+function parseCbfTopScorers(html) {
+  const start = html.indexOf("styles_goalscorers");
+  if (start < 0) return [];
+
+  const seen = new Set();
+  return [...html.slice(start).matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/g)]
+    .filter(([, row]) => row.includes("styles_jogador"))
+    .map(([, row]) => {
+      const cells = [...row.matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/g)].map((match) => match[1]);
+      if (cells.length < 3) return null;
+
+      const playerCell = cells[1];
+      const clubCell = cells[3] ?? "";
+      const playerHref = playerCell.match(/<a\b[^>]*\bhref="([^"]+)"/i)?.[1] ?? "";
+      const rank = Number(stripTags(cells[0]));
+      const goals = Number(stripTags(cells[2]));
+
+      return {
+        rank,
+        player: stripTags(playerCell),
+        goals,
+        club: firstImageAlt(clubCell) || firstImageAlt(playerCell),
+        playerImage: firstImageSrc(playerCell),
+        clubLogo: firstImageSrc(clubCell),
+        url: playerHref ? new URL(decodeHtml(playerHref), CBF_SERIE_C_URL).href : "",
+      };
+    })
+    .filter((scorer) => {
+      if (!scorer?.player || !Number.isFinite(scorer.rank) || !Number.isFinite(scorer.goals)) return false;
+      const key = `${scorer.rank}:${scorer.player}:${scorer.goals}:${scorer.club}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort((a, b) => a.rank - b.rank);
 }
 
 function ensureTeam(table, team, logo = "") {
@@ -517,7 +778,7 @@ function buildRecentResults(results) {
     });
 }
 
-function toModule({ source, status, standings, fixtures, simulationFixtures, recentResults }) {
+function toModule({ source, status, standings, fixtures, simulationFixtures, topScorers, recentResults }) {
   return `// Generated by npm run scrape:flashscore. Do not edit by hand.
 export const competitionSource = ${JSON.stringify(source, null, 2)};
 
@@ -529,21 +790,24 @@ export const serieCFullStandings = ${JSON.stringify(standings, null, 2)};
 
 export const upcomingSerieC = ${JSON.stringify(fixtures.slice(0, 6), null, 2)};
 
-export const serieCSimulationMatches = ${JSON.stringify(simulationFixtures.slice(0, 10), null, 2)};
+export const serieCSimulationMatches = ${JSON.stringify(simulationFixtures, null, 2)};
+
+export const serieCTopScorers = ${JSON.stringify(topScorers, null, 2)};
 
 export const recentSerieCResults = ${JSON.stringify(recentResults.slice(0, 3), null, 2)};
 `;
 }
 
 async function main() {
-  const [fixturesHtml, resultsHtml] = await Promise.all([
+  const [fixturesHtml, resultsHtml, cbfHtml] = await Promise.all([
     fetchHtml(TEAM_FIXTURES_URL),
     fetchHtml(SERIE_C_RESULTS_URL),
+    fetchHtml(CBF_SERIE_C_URL),
   ]);
 
-  const fixtures = parseFixtures(extractInitialFeed(fixturesHtml, "summary-fixtures"));
+  const parsedFixtures = parseFixtures(extractInitialFeed(fixturesHtml, "summary-fixtures"));
   const simulationFeedName = findInitialFeedIndex(resultsHtml, "fixtures") >= 0 ? "fixtures" : "summary-fixtures";
-  const simulationFixtures = parseFixtures(extractInitialFeed(resultsHtml, simulationFeedName))
+  const parsedSimulationFixtures = parseFixtures(extractInitialFeed(resultsHtml, simulationFeedName))
     .filter((match) => match.competition === "Serie C");
   const {
     results,
@@ -551,7 +815,12 @@ async function main() {
     fullResultsFetched,
     fullResultsFeedName,
   } = await loadCompleteResults(resultsHtml);
+  const sofascoreVenues = await loadSofascoreFixtureVenues(parsedFixtures);
+  const teamVenues = await loadTeamVenues(parsedFixtures);
+  const fixtures = applyFixtureVenues(parsedFixtures, sofascoreVenues, teamVenues);
+  const simulationFixtures = applyFixtureVenues(parsedSimulationFixtures, new Map(), teamVenues);
   const standings = computeStandings(results);
+  const topScorers = parseCbfTopScorers(cbfHtml);
   const recentResults = buildRecentResults(results);
   const now = new Date();
   const repoRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -571,20 +840,26 @@ async function main() {
       scrapedAt: now.toISOString(),
       fixturesUrl: TEAM_FIXTURES_URL,
       resultsUrl: SERIE_C_RESULTS_URL,
+      topScorersUrl: CBF_SERIE_C_URL,
       fullResultsFeedName,
       teamId: TEAM_ID,
       parsedFixtures: fixtures.length,
       parsedSimulationFixtures: simulationFixtures.length,
       parsedResults: results.length,
+      parsedTopScorers: topScorers.length,
       expectedResults,
       fullResultsFetched,
       parsedAmazonasResults: recentResults.length,
       downloadedLogos,
+      sofascoreNextEventsUrl: SOFASCORE_NEXT_EVENTS_URL,
+      resolvedSofascoreVenues: sofascoreVenues.size,
+      resolvedFixtureVenues: fixtures.filter((match) => match.venue !== "A confirmar" || match.city).length,
     },
     status: buildStatus(standings, now),
     standings,
     fixtures,
     simulationFixtures,
+    topScorers,
     recentResults,
   });
 

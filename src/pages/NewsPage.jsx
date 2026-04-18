@@ -1,56 +1,165 @@
 import { useMemo, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { assets, news, officialLinks, socialLinks } from "../data/club.js";
+import { motion } from "framer-motion";
+import { assets, news, officialLinks } from "../data/club.js";
+import { upcomingSerieC } from "../data/competition.generated.js";
 import { CTAButton } from "../components/CTAButton.jsx";
 import { NewsCard } from "../components/NewsCard.jsx";
 
-const editorialLanes = [
-  {
-    label: "Bastidores",
-    title: "Viagem, treino e vestiário entram na pauta.",
-    text: "A notícia precisa mostrar o que o torcedor não viu no placar: rotina, ambiente, decisão e preparação.",
+const storyContent = {
+  tecnico: {
+    title: "Cristian de Souza é o novo técnico do Amazonas FC",
+    heroImage: assets.trainingWide,
+    inlineImage: assets.coachPhoto,
+    lead:
+      "O Amazonas define o comando para a sequência da temporada e abre um novo ciclo com foco em consistência competitiva, rotina forte de trabalho e resposta imediata na Série C.",
+    paragraphs: [
+      "A definição do novo técnico encerra uma semana de reuniões, análise de perfil e alinhamento entre diretoria, departamento de futebol e comissão permanente. A leitura interna foi objetiva. O clube precisava de um nome capaz de sustentar rotina intensa de treino, organização curta entre jogos e repertório competitivo para um calendário apertado.",
+      "Cristian de Souza chega com a tarefa de transformar o bom início de campeonato em estabilidade de desempenho. A avaliação considerou capacidade de ajustar bloco sem a bola, encurtar distâncias no meio e dar mais clareza ao último terço. O ponto central é identidade. O Amazonas quer um time reconhecível em casa e fora.",
+      "Nos primeiros contatos com o elenco, o discurso foi direto. Intensidade, concentração e compromisso de execução. A preparação da semana inclui sessões mais curtas, campo reduzido para pressão pós-perda e trabalho específico de bola parada. O objetivo é controlar o jogo sem perder agressividade.",
+      "A chegada do treinador também reorganiza a comunicação do vestiário. Lideranças do elenco participam da construção desse novo momento, e a cobertura do clube acompanha essa virada com mais contexto de treino, bastidor e decisão técnica.",
+    ],
+    quote: "Vejo no Amazonas um clube pronto para crescer.",
+    quoteSource: "Cristian de Souza, em fala de apresentação",
+    stats: [
+      { label: "Temporada", value: "2026" },
+      { label: "Posição", value: "1º na Série C" },
+      { label: "Momento", value: "2 vitórias seguidas" },
+    ],
+    nextSteps: [
+      "Apresentação oficial e primeira coletiva no CT.",
+      "Semana com treino tático, ajuste de bola parada e observação individual.",
+      "Estreia em casa com serviço completo de pré-jogo e cobertura editorial.",
+    ],
   },
-  {
-    label: "Vídeos",
-    title: "O lance ganha ritmo antes do texto.",
-    text: "Cortes curtos para treino, chegada ao estádio, coletiva, gol e reação da arquibancada.",
+  copa: {
+    title: "Amazonas recebe Figueirense na Arena",
+    heroImage: assets.trainingWide,
+    inlineImage: assets.heroTraining,
+    lead:
+      "A partida vale vaga para a quarta fase da Copa do Brasil e recoloca o Amazonas em uma noite de alta atenção competitiva, serviço forte ao torcedor e carga máxima de ambiente.",
+    paragraphs: [
+      "A preparação para o confronto trata o jogo como corte de temporada. O Amazonas quer transformar a partida em casa em noite de controle emocional, pressão sustentada e ocupação inteligente do campo ofensivo. A comissão trabalha o contexto inteiro. Bola, estádio, rival e resposta de arquibancada.",
+      "O duelo com o Figueirense exige precisão de comportamento. O clube sabe que mata-mata pune erro curto e desorganização de segunda bola. Por isso a semana foi desenhada com ênfase em encaixe de pressão, recuperação rápida e circulação limpa perto da área adversária.",
+      "Fora do campo, a operação de jogo também ganha peso. Ingresso, acesso, estádio, conteúdo e transmissão precisam estar no mesmo fluxo. Esse tipo de partida cobra coerência editorial. O torcedor que entra para ler a matéria normalmente também quer saber como chegar, quando abrir portão e o que esperar da noite.",
+      "A ideia da cobertura é tratar o evento como peça central da rodada, com linguagem de clube profissional e leitura mais próxima de transmissão premium do que de mural institucional.",
+    ],
+    quote: "Jogo de copa pede precisão. Cada detalhe pesa mais.",
+    quoteSource: "Comissão técnica, relatório interno de preparação",
+    stats: [
+      { label: "Competição", value: "Copa do Brasil" },
+      { label: "Formato", value: "Jogo único" },
+      { label: "Palco", value: "Arena da Amazônia" },
+    ],
+    nextSteps: [
+      "Abrir serviço completo de partida com estádio, horário e acesso.",
+      "Soltar conteúdo de vestiário e chegada da delegação no dia do jogo.",
+      "Publicar pós-jogo com placar, melhores momentos e fala curta da comissão.",
+    ],
   },
-  {
-    label: "Quotes",
-    title: "Fala direta, contexto curto.",
-    text: "Trechos de atleta, técnico e torcida aparecem como prova editorial, sem transformar a página em release.",
+  reforco: {
+    title: "Alison Matheus reforça o ataque",
+    heroImage: assets.heroTraining,
+    inlineImage: assets.trainingWide,
+    lead:
+      "O Amazonas adiciona opção ofensiva ao elenco e amplia repertório de profundidade, ataque ao espaço e rotação de frente para a sequência do calendário nacional.",
+    paragraphs: [
+      "A contratação de Alison Matheus responde a uma necessidade objetiva do grupo. O clube queria mais uma peça para acelerar transição, sustentar ataque vertical e abrir cenários diferentes de jogo quando o adversário fecha corredor central.",
+      "O departamento de futebol avaliou encaixe físico, comportamento sem bola e margem de adaptação ao modelo atual. O nome avança por função, não por manchete. O Amazonas está montando elenco com leitura de necessidade, não com acúmulo aleatório de peças.",
+      "A chegada do atacante também aumenta a concorrência interna. Isso tende a melhorar intensidade de treino e ampliar alternativas para segundo tempo, rotação de lado e ajuste de profundidade. Em calendário comprimido, banco útil deixa de ser detalhe e vira estrutura.",
+      "Na comunicação, a notícia precisa mostrar mais do que assinatura de contrato. O torcedor quer entender o porquê da escolha, onde o atleta encaixa e o que muda no time a partir dessa entrada.",
+    ],
+    quote: "A ideia é aumentar repertório sem perder coordenação coletiva.",
+    quoteSource: "Departamento de futebol, análise de elenco",
+    stats: [
+      { label: "Setor", value: "Ataque" },
+      { label: "Objetivo", value: "Mais profundidade" },
+      { label: "Uso", value: "Rotação e pressão" },
+    ],
+    nextSteps: [
+      "Integração imediata ao treino com o grupo principal.",
+      "Carga física monitorada para entrada gradual na sequência de jogos.",
+      "Apresentação editorial com vídeo, fala curta e contexto tático.",
+    ],
   },
-  {
-    label: "Stats",
-    title: "Números no lugar certo.",
-    text: "Forma recente, campanha, artilharia e agenda entram como leitura rápida para quem abriu a matéria no intervalo do dia.",
-  },
-];
+};
 
-const nextSteps = [
-  "Pré-jogo com serviço, rival, horário, transmissão e recorte de tabela.",
-  "Pós-jogo com placar, melhores momentos, fotos e fala curta do vestiário.",
-  "Bastidor semanal com treino, viagem, recuperação e preparação para a rodada seguinte.",
-];
+function buildFallbackStory(item) {
+  return {
+    title: item.title,
+    heroImage: item.image,
+    inlineImage: item.image,
+    lead: item.excerpt,
+    paragraphs: [
+      "Esta matéria existe para fechar o padrão editorial da notícia individual. O texto final pode mudar, mas a estrutura precisa sustentar hero forte, leitura limpa e fluxo claro entre contexto, serviço e próximo passo.",
+      "O Amazonas ganha mais quando a página de notícia explica o fato, organiza a informação e usa imagem com peso. O objetivo é tratar cada publicação como peça de marca e de cobertura ao mesmo tempo.",
+      "Com isso, mesmo um conteúdo simples deixa de parecer postagem solta. A experiência fica mais próxima de revista esportiva de clube do que de CMS antigo.",
+    ],
+    quote: "A forma da notícia também comunica o tamanho do clube.",
+    quoteSource: "Direção editorial",
+    stats: [
+      { label: "Categoria", value: item.category },
+      { label: "Data", value: item.date },
+      { label: "Formato", value: "Matéria oficial" },
+    ],
+    nextSteps: [
+      "Completar a matéria com texto final do clube.",
+      "Substituir a imagem por foto específica do fato.",
+      "Adicionar relacionados com jogo, elenco e serviço.",
+    ],
+  };
+}
 
-const storyQuotes = [
-  {
-    quote: "A matéria precisa chegar perto do gramado, não apenas repetir o resultado.",
-    source: "Linha editorial",
-  },
-  {
-    quote: "Torcida, elenco e cidade entram na mesma narrativa quando a página respira como dia de jogo.",
-    source: "Redação Amazonas FC",
-  },
-];
+function ArticleMeta({ date, author, readTime }) {
+  return (
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-2 border-y border-paper/12 py-4 text-[11px] font-extrabold uppercase tracking-[0.12em] text-paper/46">
+      <span>{date}</span>
+      <span>por {author}</span>
+      <span>tempo de leitura {readTime}</span>
+    </div>
+  );
+}
 
-export function NewsPage() {
-  const featured = news[0];
-  const youtubeLink = socialLinks.find((item) => item.label === "YouTube")?.href ?? officialLinks.site;
-  const { scrollY } = useScroll();
-  const heroY = useTransform(scrollY, [0, 720], [0, 92]);
-  const heroScale = useTransform(scrollY, [0, 720], [1.02, 1.12]);
+function RelatedCard({ label, title, text, href, variant = "dark" }) {
+  const external = /^https?:\/\//.test(href);
 
+  return (
+    <a
+      className="group flex min-h-[220px] flex-col justify-between border border-paper/12 bg-paper/[0.035] p-6 transition duration-300 hover:border-yellow/60 hover:bg-paper/[0.06]"
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noreferrer" : undefined}
+    >
+      <div>
+        <p className="mb-5 text-[11px] font-extrabold uppercase tracking-[0.16em] text-yellow">{label}</p>
+        <h3 className="display max-w-sm text-[clamp(28px,3vw,42px)] leading-[0.92] text-paper">{title}</h3>
+        <p className="mt-4 max-w-sm text-sm font-semibold leading-6 text-paper/58">{text}</p>
+      </div>
+      <div className="pt-6">
+        <span
+          className={`inline-flex min-h-11 items-center justify-center rounded-[8px] px-4 py-3 text-[11px] font-extrabold uppercase tracking-[0.08em] ${
+            variant === "primary" ? "bg-yellow text-black" : "border border-paper/16 bg-black/40 text-paper/82"
+          }`}
+        >
+          Abrir
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function normalizeRouteArticleId(route) {
+  if (!route?.startsWith("/noticias/")) {
+    return null;
+  }
+
+  return route.replace("/noticias/", "").split("/")[0] || null;
+}
+
+export function NewsPage({ route = "/noticias" }) {
+  const articleId = normalizeRouteArticleId(route) ?? news[0].id;
+  const articleItem = news.find((item) => item.id === articleId) ?? news[0];
+  const story = storyContent[articleItem.id] ?? buildFallbackStory(articleItem);
+  const nextMatch = upcomingSerieC[0];
   const categories = useMemo(() => ["Todas", ...new Set(news.map((item) => item.category))], []);
   const [category, setCategory] = useState("Todas");
   const [query, setQuery] = useState("");
@@ -66,208 +175,141 @@ export function NewsPage() {
     });
   }, [category, query]);
 
-  const archiveStats = useMemo(
-    () => [
-      { value: news.length.toString().padStart(2, "0"), label: "matérias oficiais" },
-      { value: (categories.length - 1).toString().padStart(2, "0"), label: "editorias ativas" },
-      { value: "24h", label: "ritmo de cobertura em jogo" },
-    ],
-    [categories.length],
-  );
+  const relatedNews = news.filter((item) => item.id !== articleItem.id).slice(0, 2);
 
   return (
     <main>
-      <section className="hero-mask relative min-h-[94svh] overflow-hidden pt-24">
-        <motion.img
-          className="absolute inset-0 z-0 h-full w-full object-cover object-[48%_38%]"
-          src={featured.image}
-          alt=""
-          style={{ y: heroY, scale: heroScale }}
-        />
-        <div className="absolute inset-0 z-[1] bg-[linear-gradient(90deg,rgba(5,4,3,.97)_0%,rgba(5,4,3,.75)_42%,rgba(5,4,3,.34)_72%),linear-gradient(180deg,rgba(5,4,3,.12)_0%,rgba(5,4,3,.34)_52%,rgba(5,4,3,.98)_100%)]" />
-        <div className="amazon-pattern absolute inset-0 z-[2]" />
-        <div className="grain z-[2]" />
+      <section className="relative min-h-[88svh] overflow-hidden pt-24">
+        <img className="absolute inset-0 h-full w-full object-cover object-[50%_28%]" src={story.heroImage} alt="" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,4,3,.36)_0%,rgba(5,4,3,.42)_24%,rgba(5,4,3,.86)_62%,rgba(5,4,3,.98)_100%),linear-gradient(90deg,rgba(5,4,3,.86)_0%,rgba(5,4,3,.38)_38%,rgba(5,4,3,.2)_100%)]" />
+        <div className="amazon-pattern absolute inset-0 opacity-30" />
+        <div className="grain" />
 
-        <div className="section-shell relative z-10 grid min-h-[calc(94svh-96px)] items-end pb-12">
-          <div className="max-w-6xl">
-            <motion.p
-              className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.2em] text-yellow"
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.62, ease: [0.22, 1, 0.36, 1] }}
-            >
-              Manchete viva
-            </motion.p>
-            <motion.h1
-              className="display max-w-6xl text-[clamp(54px,10.8vw,148px)] leading-[0.82] text-paper"
-              initial={{ opacity: 0, y: 34, scale: 0.985 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ delay: 0.08, duration: 0.76, ease: [0.22, 1, 0.36, 1] }}
-            >
-              {featured.title}
-            </motion.h1>
-            <motion.div
-              className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,680px)_auto] lg:items-end"
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <div>
-                <div className="mb-4 flex flex-wrap items-center gap-3 text-[12px] font-extrabold uppercase tracking-[0.14em] text-yellow">
-                  <span>{featured.category}</span>
-                  <span className="h-px w-8 bg-yellow/60" />
-                  <span>{featured.date}</span>
-                </div>
-                <p className="max-w-2xl text-[clamp(18px,2vw,26px)] font-bold leading-tight text-paper/88">{featured.excerpt}</p>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <CTAButton href={featured.href} external>
-                  Ler manchete
-                </CTAButton>
-                <CTAButton href="#news-digest" variant="ghost">
-                  Ver bastidores
-                </CTAButton>
-              </div>
-            </motion.div>
-          </div>
+        <div className="section-shell relative z-10 flex min-h-[calc(88svh-96px)] items-end pb-12 lg:pb-16">
+          <motion.div
+            className="max-w-5xl"
+            initial={{ opacity: 0, y: 22 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.58, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <p className="mb-4 text-[11px] font-extrabold uppercase tracking-[0.22em] text-paper/72">Notícias</p>
+            <p className="mb-5 inline-flex rounded-full bg-yellow px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.14em] text-black">
+              {articleItem.category}
+            </p>
+            <h1 className="display max-w-5xl text-[clamp(42px,7.8vw,110px)] leading-[0.86] text-paper">{story.title}</h1>
+            <p className="mt-6 max-w-3xl text-[clamp(18px,2.1vw,26px)] font-bold leading-tight text-paper/82">{story.lead}</p>
+            <div className="mt-8 max-w-3xl">
+              <ArticleMeta date={articleItem.date.toUpperCase()} author="Amazonas FC" readTime="3 min" />
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      <section id="news-digest" className="section-shell py-20 lg:py-28">
-        <div className="mb-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+      <section className="section-shell py-16 lg:py-20">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <article className="min-w-0">
+            <div className="mb-10 overflow-hidden border border-paper/12 bg-paper/[0.03]">
+              <img className="h-[340px] w-full object-cover md:h-[460px]" src={story.inlineImage} alt="" />
+            </div>
+
+            <div className="mx-auto max-w-3xl">
+              <div className="space-y-6 text-[18px] leading-9 text-paper/78">
+                {story.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+
+              <figure className="my-12 border-l-2 border-yellow pl-6">
+                <blockquote className="display text-[clamp(32px,4vw,54px)] leading-[0.94] text-paper">{story.quote}</blockquote>
+                <figcaption className="mt-4 text-[11px] font-extrabold uppercase tracking-[0.16em] text-paper/44">{story.quoteSource}</figcaption>
+              </figure>
+
+              <div className="space-y-6 text-[18px] leading-9 text-paper/78">
+                <p>
+                  O desenho da página trata a matéria como produto editorial completo. Hero forte, metadados limpos, largura de leitura estável, imagem com peso e saída clara para jogo, elenco e ingresso. Isso sustenta a sensação de clube profissional em vez de postagem solta.
+                </p>
+                <p>
+                  O objetivo aqui é unificar as notícias principais em uma linguagem visual só. A manchete muda; a estrutura permanece. Isso reduz ruído, melhora continuidade e cria assinatura editorial para o site.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <aside className="grid content-start gap-5">
+            <div className="border border-paper/12 bg-paper/[0.035] p-6">
+              <p className="mb-5 text-[11px] font-extrabold uppercase tracking-[0.16em] text-yellow">Stats</p>
+              <div className="grid gap-4">
+                {story.stats.map((item) => (
+                  <div className="border-t border-paper/10 pt-4 first:border-t-0 first:pt-0" key={item.label}>
+                    <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-paper/40">{item.label}</p>
+                    <p className="mt-2 text-[22px] font-black uppercase leading-tight text-paper">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="border border-paper/12 bg-paper/[0.035] p-6">
+              <p className="mb-5 text-[11px] font-extrabold uppercase tracking-[0.16em] text-yellow">Próximos passos</p>
+              <ol className="grid gap-5">
+                {story.nextSteps.map((item, index) => (
+                  <li className="grid grid-cols-[34px_1fr] gap-4 border-t border-paper/10 pt-4 first:border-t-0 first:pt-0" key={item}>
+                    <span className="display text-3xl leading-none text-yellow">{index + 1}</span>
+                    <span className="text-sm font-semibold leading-6 text-paper/66">{item}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            <div className="border border-yellow/30 bg-[linear-gradient(135deg,rgba(242,195,25,.16),rgba(242,195,25,.04))] p-6">
+              <p className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.16em] text-black/72">Comprar ingresso</p>
+              <h3 className="display text-[clamp(30px,3vw,44px)] leading-[0.92] text-black">Leve a matéria para a arquibancada.</h3>
+              <p className="mt-4 text-sm font-semibold leading-6 text-black/72">A notícia precisa converter quando o próximo passo é estádio.</p>
+              <div className="mt-6">
+                <CTAButton href={officialLinks.ingressos} external>
+                  Comprar ingressos
+                </CTAButton>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section className="section-shell pb-14">
+        <div className="mb-8 grid gap-4 border-t border-paper/12 pt-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <p className="mb-4 text-[12px] font-extrabold uppercase tracking-[0.18em] text-yellow">Conteúdo emocional</p>
-            <h2 className="display max-w-4xl text-[clamp(46px,7.8vw,104px)] leading-[0.86]">O clube por dentro da rodada.</h2>
+            <p className="mb-4 text-[11px] font-extrabold uppercase tracking-[0.16em] text-yellow">Relacionados</p>
+            <h2 className="display max-w-3xl text-[clamp(40px,6vw,76px)] leading-[0.88]">Próximo passo sem atrito.</h2>
           </div>
-          <p className="max-w-2xl text-base font-semibold leading-7 text-paper/62">
-            Notícias com bastidor, vídeo, fala direta e dado competitivo. A página fica mais perto de transmissão premium do que de mural institucional.
+          <p className="max-w-2xl text-base font-semibold leading-7 text-paper/58">
+            A saída da matéria precisa apontar para jogo, outras notícias, ingresso e elenco.
           </p>
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
-          <motion.article
-            className="group relative min-h-[560px] overflow-hidden border border-paper/12 bg-ink"
-            initial={{ opacity: 0, y: 34 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.68, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <img className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" src={assets.trainingWide} alt="" />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,4,3,.18)_0%,rgba(5,4,3,.26)_40%,rgba(5,4,3,.95)_100%)]" />
-            <div className="amazon-pattern absolute inset-0 opacity-20" />
-            <div className="absolute inset-x-0 bottom-0 p-6 md:p-9">
-              <p className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-yellow">Bastidores</p>
-              <h3 className="display max-w-4xl text-[clamp(42px,6vw,82px)] leading-[0.88]">A história antes do apito.</h3>
-              <p className="mt-5 max-w-2xl text-base font-semibold leading-7 text-paper/68">
-                Preparação, deslocamento, ambiente de grupo e torcida deixam a notícia com temperatura de jogo.
-              </p>
-            </div>
-          </motion.article>
-
-          <div className="grid gap-5">
-            <motion.a
-              className="focus-ring group relative min-h-[300px] overflow-hidden border border-paper/12 bg-black"
-              href={youtubeLink}
-              target="_blank"
-              rel="noreferrer"
-              initial={{ opacity: 0, y: 34 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: 0.08, duration: 0.68, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <img className="absolute inset-0 h-full w-full object-cover object-[52%_30%] opacity-[0.78] transition duration-700 group-hover:scale-105" src={assets.heroTraining} alt="" />
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,4,3,.88),rgba(5,4,3,.2)),linear-gradient(180deg,rgba(5,4,3,.08),rgba(5,4,3,.82))]" />
-              <div className="absolute left-6 top-6 flex h-14 w-14 items-center justify-center rounded-full border border-yellow/72 bg-yellow text-black shadow-[0_18px_50px_rgba(0,0,0,.38)] transition group-hover:scale-105">
-                <span className="ml-1 block h-0 w-0 border-y-[9px] border-l-[14px] border-y-transparent border-l-black" />
-              </div>
-              <div className="absolute inset-x-0 bottom-0 p-6 md:p-7">
-                <p className="text-[12px] font-extrabold uppercase tracking-[0.18em] text-yellow">Vídeo</p>
-                <h3 className="display mt-3 text-[clamp(34px,4.5vw,58px)] leading-[0.9]">Bastidor em movimento.</h3>
-              </div>
-            </motion.a>
-
-            <motion.div
-              className="border border-paper/12 bg-paper/[0.04] p-6 md:p-7"
-              initial={{ opacity: 0, y: 34 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: 0.14, duration: 0.68, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <p className="mb-6 text-[12px] font-extrabold uppercase tracking-[0.18em] text-yellow">Quotes</p>
-              <div className="grid gap-6">
-                {storyQuotes.map((item) => (
-                  <figure className="border-l border-yellow/70 pl-5" key={item.quote}>
-                    <blockquote className="text-[clamp(21px,2.4vw,30px)] font-extrabold leading-tight text-paper">{item.quote}</blockquote>
-                    <figcaption className="mt-4 text-[11px] font-extrabold uppercase tracking-[0.15em] text-paper/44">{item.source}</figcaption>
-                  </figure>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-
-        <div className="mt-5 grid gap-5 md:grid-cols-3">
-          {archiveStats.map((item) => (
-            <motion.div
-              className="border border-paper/12 bg-yellow text-black p-6"
-              key={item.label}
-              initial={{ opacity: 0, y: 22 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.54, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <p className="display text-[clamp(46px,6vw,76px)] leading-none">{item.value}</p>
-              <p className="mt-3 text-[12px] font-extrabold uppercase tracking-[0.12em]">{item.label}</p>
-            </motion.div>
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <RelatedCard
+            label="Próximo jogo"
+            title={`${nextMatch.home} x ${nextMatch.away}`}
+            text={`${nextMatch.date.toUpperCase()} • ${nextMatch.time} • ${nextMatch.venue} / ${nextMatch.city}`}
+            href="#/matchday"
+            variant="primary"
+          />
+          {relatedNews.map((item) => (
+            <RelatedCard key={item.id} label={item.category} title={item.title} text={item.excerpt} href={`#${item.path}`} />
           ))}
-        </div>
-
-        <div className="mt-5 grid gap-5 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="grid gap-5 sm:grid-cols-2">
-            {editorialLanes.map((item) => (
-              <motion.article
-                className="border border-paper/12 bg-paper/[0.035] p-6 transition hover:border-yellow/70 hover:bg-paper/[0.06]"
-                key={item.label}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.58, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <p className="mb-7 text-[12px] font-extrabold uppercase tracking-[0.18em] text-yellow">{item.label}</p>
-                <h3 className="display text-[clamp(30px,3.3vw,42px)] leading-[0.94]">{item.title}</h3>
-                <p className="mt-5 text-sm font-semibold leading-6 text-paper/58">{item.text}</p>
-              </motion.article>
-            ))}
-          </div>
-
-          <motion.aside
-            className="flex flex-col justify-between border border-yellow/40 bg-[linear-gradient(135deg,rgba(242,195,25,.18),rgba(18,53,31,.18))] p-6 md:p-8"
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.58, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div>
-              <p className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-yellow">Próximos passos</p>
-              <h3 className="display max-w-xl text-[clamp(38px,5vw,66px)] leading-[0.9]">Cobertura com ritmo de competição grande.</h3>
-            </div>
-            <ol className="mt-10 grid gap-5">
-              {nextSteps.map((item, index) => (
-                <li className="grid grid-cols-[44px_1fr] gap-4 border-t border-paper/14 pt-5" key={item}>
-                  <span className="display text-4xl leading-none text-yellow">{String(index + 1).padStart(2, "0")}</span>
-                  <span className="text-sm font-extrabold uppercase leading-6 tracking-[0.06em] text-paper/72">{item}</span>
-                </li>
-              ))}
-            </ol>
-          </motion.aside>
+          <RelatedCard
+            label="Conheça o elenco"
+            title="Números, fotos e contexto de grupo"
+            text="Página de elenco com leitura mais viva, útil e próxima do futebol profissional."
+            href="#/elenco"
+          />
         </div>
       </section>
 
       <section id="news-archive" className="section-shell pb-24">
         <div className="mb-10 grid gap-6 border-t border-paper/12 pt-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <p className="mb-4 text-[12px] font-extrabold uppercase tracking-[0.18em] text-yellow">Arquivo oficial</p>
-            <h2 className="display max-w-3xl text-[clamp(44px,7vw,88px)] leading-[0.88]">Tudo que virou notícia.</h2>
+            <p className="mb-4 text-[11px] font-extrabold uppercase tracking-[0.16em] text-yellow">Outras notícias</p>
+            <h2 className="display max-w-3xl text-[clamp(40px,6vw,76px)] leading-[0.88]">Arquivo editorial.</h2>
           </div>
           <div className="grid gap-4">
             <input
@@ -279,7 +321,7 @@ export function NewsPage() {
             <div className="flex flex-wrap gap-2">
               {categories.map((item) => (
                 <button
-                  className={`focus-ring rounded-[4px] px-4 py-3 text-[12px] font-extrabold uppercase tracking-[0.08em] transition ${
+                  className={`focus-ring rounded-[8px] px-4 py-3 text-[12px] font-extrabold uppercase tracking-[0.08em] transition ${
                     item === category ? "bg-yellow text-black" : "border border-paper/16 text-paper/68 hover:border-yellow hover:text-yellow"
                   }`}
                   key={item}

@@ -35,7 +35,7 @@ export function StorePage() {
             <span className="text-xs font-extrabold uppercase text-paper/54">Total</span>
             <strong>R$ {total.toFixed(2).replace(".", ",")}</strong>
           </div>
-          <a className="focus-ring mt-6 flex justify-center rounded-[4px] bg-yellow px-6 py-4 text-[12px] font-extrabold uppercase tracking-[0.08em] text-black hover:bg-yellow-soft" href={officialLinks.loja} target="_blank" rel="noreferrer">
+          <a className="focus-ring mt-6 flex justify-center rounded-[8px] bg-yellow px-6 py-4 text-[12px] font-extrabold uppercase tracking-[0.08em] text-black hover:bg-yellow-soft" href={officialLinks.loja} target="_blank" rel="noreferrer">
             Loja oficial
           </a>
         </aside>

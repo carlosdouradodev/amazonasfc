@@ -33,7 +33,7 @@ const filteredSquad = computed(() =>
           v-for="item in positions"
           :key="item"
           type="button"
-          class="rounded-[4px] px-4 py-3 text-[12px] font-extrabold uppercase tracking-[0.08em] transition"
+          class="rounded-[8px] px-4 py-3 text-[12px] font-extrabold uppercase tracking-[0.08em] transition"
           :class="item === position ? 'bg-yellow text-black' : 'border border-paper/16 text-paper/68 hover:border-yellow hover:text-yellow'"
           @click="position = item"
         >

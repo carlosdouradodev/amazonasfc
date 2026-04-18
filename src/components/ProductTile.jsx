@@ -10,7 +10,7 @@ export function ProductTile({ product, onAdd }) {
         <div className="mt-5 flex items-center justify-between gap-4">
           <span className="font-extrabold">R$ {product.price.toFixed(2).replace(".", ",")}</span>
           <button
-            className="focus-ring rounded-[4px] bg-yellow px-4 py-2 text-[12px] font-extrabold uppercase tracking-[0.08em] text-black transition hover:bg-yellow-soft"
+            className="focus-ring rounded-[8px] bg-yellow px-4 py-2 text-[12px] font-extrabold uppercase tracking-[0.08em] text-black transition hover:bg-yellow-soft"
             type="button"
             onClick={() => onAdd(product)}
           >

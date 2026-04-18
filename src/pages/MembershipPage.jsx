@@ -21,7 +21,7 @@ export function MembershipPage() {
           <p className="mt-5 text-sm font-semibold leading-7 text-paper/64">
             Prioridade, check-in e desconto devem aparecer antes de cadastro, CPF e pagamento. O torcedor decide com menos atrito.
           </p>
-          <a className="focus-ring mt-7 inline-flex rounded-[4px] bg-yellow px-6 py-4 text-[12px] font-extrabold uppercase tracking-[0.08em] text-black hover:bg-yellow-soft" href={officialLinks.socio} target="_blank" rel="noreferrer">
+          <a className="focus-ring mt-7 inline-flex rounded-[8px] bg-yellow px-6 py-4 text-[12px] font-extrabold uppercase tracking-[0.08em] text-black hover:bg-yellow-soft" href={officialLinks.socio} target="_blank" rel="noreferrer">
             Ir ao sócio oficial
           </a>
         </div>

@@ -84,10 +84,10 @@ const serviceRows = computed(() => [
         </div>
 
         <div class="grid gap-3 sm:grid-cols-2">
-          <a class="rounded-[4px] bg-yellow px-5 py-4 text-center text-[12px] font-extrabold uppercase tracking-[0.08em] text-black transition duration-300 hover:-translate-y-0.5 hover:bg-yellow-soft" href="https://socioamazonas.com.br/" target="_blank" rel="noreferrer">
+          <a class="rounded-[8px] bg-yellow px-5 py-4 text-center text-[12px] font-extrabold uppercase tracking-[0.08em] text-black transition duration-300 hover:-translate-y-0.5 hover:bg-yellow-soft" href="https://socioamazonas.com.br/" target="_blank" rel="noreferrer">
             Check-in sócio
           </a>
-          <a class="rounded-[4px] border border-paper/20 bg-paper/[0.02] px-5 py-4 text-center text-[12px] font-extrabold uppercase tracking-[0.08em] text-paper/74 transition duration-300 hover:-translate-y-0.5 hover:border-yellow hover:text-yellow" href="https://www.youtube.com/channel/UCmbbvZoJZeZWPEFXAoWmrjw" target="_blank" rel="noreferrer">
+          <a class="rounded-[8px] border border-paper/20 bg-paper/[0.02] px-5 py-4 text-center text-[12px] font-extrabold uppercase tracking-[0.08em] text-paper/74 transition duration-300 hover:-translate-y-0.5 hover:border-yellow hover:text-yellow" href="https://www.youtube.com/channel/UCmbbvZoJZeZWPEFXAoWmrjw" target="_blank" rel="noreferrer">
             TV Onça
           </a>
         </div>
