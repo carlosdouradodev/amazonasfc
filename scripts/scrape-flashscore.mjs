@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const TEAM_ID = "zk9LAfeq";
 const AMAZONAS = "Amazonas";
-const TIME_ZONE = "America/Sao_Paulo";
+const TIME_ZONE = "America/Manaus";
 const OUTPUT_PATH = "src/data/competition.generated.js";
 const LOGO_OUTPUT_PATH = "public/team-logos";
 const LOGO_PUBLIC_PATH = "/team-logos";
@@ -527,9 +527,9 @@ async function loadSofascoreFixtureVenues(fixtures) {
   }
 }
 
-async function loadTeamVenues(fixtures) {
+async function loadTeamVenues(matches) {
   const homeTeams = new Map(
-    fixtures
+    matches
       .filter((match) => match.homeTeamId && match.homeTeamSlug)
       .map((match) => [match.homeTeamId, { id: match.homeTeamId, slug: match.homeTeamSlug }]),
   );
@@ -570,20 +570,58 @@ function applyFixtureVenues(fixtures, sofascoreVenues, teamVenues) {
   });
 }
 
+function applyResultVenues(results, teamVenues) {
+  return results.map((match) => {
+    const venue = teamVenues.get(match.homeTeamId);
+
+    return {
+      id: match.id,
+      timestamp: match.timestamp,
+      competition: match.competition,
+      round: match.round,
+      date: match.date,
+      day: match.day,
+      time: match.time,
+      home: match.home,
+      away: match.away,
+      homeLogo: match.homeLogo,
+      awayLogo: match.awayLogo,
+      venue: venue?.venue ?? match.venue,
+      city: venue?.city ?? match.city,
+      homeGoals: match.homeGoals,
+      awayGoals: match.awayGoals,
+    };
+  });
+}
+
 function parseResults(feed) {
   return parseFeedRecords(feed)
     .filter((record) => record.AD && record.AE && record.AF && record.AG !== undefined && record.AH !== undefined)
-    .map((record) => ({
-      id: record.AA,
-      timestamp: Number(record.AD),
-      round: roundLabel(record.ER),
-      home: normalizeTeam(record.AE),
-      away: normalizeTeam(record.AF),
-      homeLogo: logoUrl(record.OA),
-      awayLogo: logoUrl(record.OB),
-      homeGoals: Number(record.AG),
-      awayGoals: Number(record.AH),
-    }))
+    .map((record) => {
+      const date = new Date(Number(record.AD) * 1000);
+
+      return {
+        id: record.AA,
+        timestamp: Number(record.AD),
+        competition: record._competition || "Serie C",
+        round: roundLabel(record.ER),
+        date: titleDate(date),
+        day: weekDay(date),
+        time: matchTime(date),
+        home: normalizeTeam(record.AE),
+        away: normalizeTeam(record.AF),
+        homeLogo: logoUrl(record.OA),
+        awayLogo: logoUrl(record.OB),
+        homeTeamId: record.PX,
+        homeTeamSlug: record.WU,
+        awayTeamId: record.PY,
+        awayTeamSlug: record.WV,
+        venue: "A confirmar",
+        city: "",
+        homeGoals: Number(record.AG),
+        awayGoals: Number(record.AH),
+      };
+    })
     .filter((match) => Number.isFinite(match.homeGoals) && Number.isFinite(match.awayGoals));
 }
 
@@ -758,14 +796,17 @@ function buildRecentResults(results) {
       return {
         id: match.id,
         timestamp: match.timestamp,
-        competition: "Serie C",
+        competition: match.competition || "Serie C",
         round: match.round || "Serie C",
-        date: titleDate(date),
-        day: weekDay(date),
+        date: match.date || titleDate(date),
+        day: match.day || weekDay(date),
+        time: match.time || matchTime(date),
         home: match.home,
         away: match.away,
         homeLogo: match.homeLogo,
         awayLogo: match.awayLogo,
+        venue: match.venue || "A confirmar",
+        city: match.city || "",
         homeGoals: match.homeGoals,
         awayGoals: match.awayGoals,
         opponent,
@@ -776,6 +817,63 @@ function buildRecentResults(results) {
         outcome,
       };
     });
+}
+
+function validateCompetitionPayload({ source, status, standings, fixtures, simulationFixtures, topScorers, recentResults }) {
+  const requiredSourceFields = [
+    "scrapedAt",
+    "fixturesUrl",
+    "resultsUrl",
+    "topScorersUrl",
+    "teamId",
+    "parsedFixtures",
+    "parsedResults",
+    "expectedResults",
+  ];
+
+  for (const fieldName of requiredSourceFields) {
+    if (!source?.[fieldName] && source?.[fieldName] !== 0) {
+      throw new Error(`Generated competition source is missing "${fieldName}"`);
+    }
+  }
+
+  if (!/^\d{4}-\d{2}-\d{2}T/.test(String(source.scrapedAt))) {
+    throw new Error("Generated competition source scrapedAt must be an ISO string");
+  }
+
+  if (!status?.position || typeof status.points !== "number" || !status.updatedAt) {
+    throw new Error("Generated competition status is incomplete");
+  }
+
+  if (!Array.isArray(standings) || standings.length === 0) {
+    throw new Error("Generated standings are empty");
+  }
+
+  for (const team of standings) {
+    if (!team.team || typeof team.rank !== "number" || typeof team.points !== "number") {
+      throw new Error("Generated standings contain an invalid team row");
+    }
+  }
+
+  for (const [label, matches] of [
+    ["fixtures", fixtures],
+    ["simulation fixtures", simulationFixtures],
+    ["recent results", recentResults],
+  ]) {
+    if (!Array.isArray(matches)) {
+      throw new Error(`Generated ${label} must be an array`);
+    }
+
+    for (const match of matches) {
+      if (!match?.id || !match.home || !match.away || !match.date || !match.time) {
+        throw new Error(`Generated ${label} contain an invalid match`);
+      }
+    }
+  }
+
+  if (!Array.isArray(topScorers)) {
+    throw new Error("Generated top scorers must be an array");
+  }
 }
 
 function toModule({ source, status, standings, fixtures, simulationFixtures, topScorers, recentResults }) {
@@ -810,15 +908,16 @@ async function main() {
   const parsedSimulationFixtures = parseFixtures(extractInitialFeed(resultsHtml, simulationFeedName))
     .filter((match) => match.competition === "Serie C");
   const {
-    results,
+    results: parsedResults,
     expectedResults,
     fullResultsFetched,
     fullResultsFeedName,
   } = await loadCompleteResults(resultsHtml);
   const sofascoreVenues = await loadSofascoreFixtureVenues(parsedFixtures);
-  const teamVenues = await loadTeamVenues(parsedFixtures);
+  const teamVenues = await loadTeamVenues([...parsedFixtures, ...parsedSimulationFixtures, ...parsedResults]);
   const fixtures = applyFixtureVenues(parsedFixtures, sofascoreVenues, teamVenues);
   const simulationFixtures = applyFixtureVenues(parsedSimulationFixtures, new Map(), teamVenues);
+  const results = applyResultVenues(parsedResults, teamVenues);
   const standings = computeStandings(results);
   const topScorers = parseCbfTopScorers(cbfHtml);
   const recentResults = buildRecentResults(results);
@@ -834,28 +933,40 @@ async function main() {
   }
 
   const downloadedLogos = await downloadLogos({ fixtures, results, standings, repoRoot });
+  const source = {
+    scrapedAt: now.toISOString(),
+    fixturesUrl: TEAM_FIXTURES_URL,
+    resultsUrl: SERIE_C_RESULTS_URL,
+    topScorersUrl: CBF_SERIE_C_URL,
+    fullResultsFeedName,
+    teamId: TEAM_ID,
+    parsedFixtures: fixtures.length,
+    parsedSimulationFixtures: simulationFixtures.length,
+    parsedResults: results.length,
+    parsedTopScorers: topScorers.length,
+    expectedResults,
+    fullResultsFetched,
+    parsedAmazonasResults: recentResults.length,
+    downloadedLogos,
+    sofascoreNextEventsUrl: SOFASCORE_NEXT_EVENTS_URL,
+    resolvedSofascoreVenues: sofascoreVenues.size,
+    resolvedFixtureVenues: fixtures.filter((match) => match.venue !== "A confirmar" || match.city).length,
+  };
+  const status = buildStatus(standings, now);
+
+  validateCompetitionPayload({
+    source,
+    status,
+    standings,
+    fixtures,
+    simulationFixtures,
+    topScorers,
+    recentResults,
+  });
 
   const output = toModule({
-    source: {
-      scrapedAt: now.toISOString(),
-      fixturesUrl: TEAM_FIXTURES_URL,
-      resultsUrl: SERIE_C_RESULTS_URL,
-      topScorersUrl: CBF_SERIE_C_URL,
-      fullResultsFeedName,
-      teamId: TEAM_ID,
-      parsedFixtures: fixtures.length,
-      parsedSimulationFixtures: simulationFixtures.length,
-      parsedResults: results.length,
-      parsedTopScorers: topScorers.length,
-      expectedResults,
-      fullResultsFetched,
-      parsedAmazonasResults: recentResults.length,
-      downloadedLogos,
-      sofascoreNextEventsUrl: SOFASCORE_NEXT_EVENTS_URL,
-      resolvedSofascoreVenues: sofascoreVenues.size,
-      resolvedFixtureVenues: fixtures.filter((match) => match.venue !== "A confirmar" || match.city).length,
-    },
-    status: buildStatus(standings, now),
+    source,
+    status,
     standings,
     fixtures,
     simulationFixtures,
@@ -871,7 +982,20 @@ async function main() {
   console.log(`Updated ${OUTPUT_PATH}`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+const isDirectRun = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (isDirectRun) {
+  main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}
+
+export {
+  TIME_ZONE,
+  buildRecentResults,
+  buildStatus,
+  competitionLabel,
+  roundLabel,
+  validateCompetitionPayload,
+};

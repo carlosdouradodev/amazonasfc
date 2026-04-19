@@ -1,6 +1,14 @@
 node_modules
 dist
+coverage
+.vite
+.vite-temp
+.tmp/
 .env
 .env.*
 *.log
+.DS_Store
+Thumbs.db
+.co[d]ex
+.co[d]ex/
 amazonas-figma/

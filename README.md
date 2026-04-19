@@ -2,13 +2,13 @@
 
 Site experimental do Amazonas FC com foco em matchday, calendario, classificacao, titulos, noticias, socio torcedor, loja, elenco e historia.
 
-O projeto usa React como casca principal, Vue para islands interativas pontuais, Tailwind CSS v4 via Vite e uma rotina Node para gerar dados de calendario, tabela, resultados recentes e escudos a partir do Flashscore.
+O projeto usa React como camada principal, Tailwind CSS v4 via Vite e uma rotina Node para gerar dados de calendario, tabela, resultados recentes e escudos a partir do Flashscore.
 
 ## Stack
 
 - Vite 8
 - React
-- Vue
+- TypeScript
 - Tailwind CSS v4
 - Framer Motion
 - Node.js `^20.19.0 || >=22.12.0`
@@ -18,6 +18,14 @@ O projeto usa React como casca principal, Vue para islands interativas pontuais,
 - Node.js compativel com Vite 8
 - npm
 - Acesso de rede para executar a raspagem do Flashscore
+
+Versao recomendada no repositório:
+
+```text
+20.19.0
+```
+
+O arquivo `.nvmrc` foi adicionado com essa baseline.
 
 ## Instalacao
 
@@ -51,9 +59,44 @@ http://127.0.0.1:5173/
 
 Inicia o Vite em `127.0.0.1`.
 
+### `npm run verify:runtime`
+
+Valida se o Node local atende a baseline do projeto:
+
+- `20.19.0+`
+- `22.12.0+`
+
 ### `npm run build`
 
 Gera a versao de producao em `dist`.
+
+### `npm run lint`
+
+Executa checks locais de seguranca e consistencia de markup/codigo.
+
+### `npm run smoke`
+
+Executa smoke checks estaticos do baseline:
+
+- arquivos essenciais
+- rotas esperadas
+- exports do modulo gerado
+- referencias basicas de assets
+
+### `npm run typecheck`
+
+Executa a checagem estatica do TypeScript em `src`, `tests` e `vite.config.ts`.
+
+### `npm run test`
+
+Executa a suite de testes unitarios do projeto:
+
+- utilitarios de rota
+- contratos do scraper
+
+### `npm run check`
+
+Executa `lint`, `smoke`, `typecheck` e `test`.
 
 ### `npm run preview`
 
@@ -111,56 +154,53 @@ scripts/
   watch-flashscore.mjs
 
 src/
-  App.jsx
-  main.jsx
+  App.tsx
+  main.tsx
   styles.css
 
   components/
     componentes React reutilizaveis
 
   data/
-    club.js
+    club.ts
     competition.generated.js
+    news.ts
+    membership.ts
+    store.ts
+    history.ts
 
   pages/
-    paginas da aplicacao por rota hash
+    paginas da aplicacao por rota
 
-  vue/
-    Vue islands montadas dentro do React
 ```
 
 ## Rotas
 
-A aplicacao usa hash routing simples.
+A aplicacao usa rotas limpas via History API.
 
 ```text
-#/          Home
-#/matchday  Matchday
-#/noticias  Noticias
-#/elenco    Elenco
-#/socio     Socio
-#/loja      Loja
-#/historia  Historia
+/           Home
+/matchday   Matchday
+/noticias   Noticias
+/elenco     Elenco
+/socio      Socio
+/loja       Loja
+/historia   Historia
 ```
 
 ## Dados
 
 ### Dados editoriais
 
-Os dados editoriais ficam em `src/data/club.js`.
+Os dados editoriais ficam divididos entre:
 
 Inclui:
 
-- navegacao
-- links oficiais
-- estatisticas institucionais
-- titulos
-- jogos mockados do match center
-- noticias
-- elenco
-- planos de socio
-- produtos
-- linha do tempo
+- `src/data/club.ts`: assets, links oficiais, estatisticas, titulos e elenco
+- `src/data/news.ts`: cards e artigos completos das noticias
+- `src/data/membership.ts`: planos do socio
+- `src/data/store.ts`: produtos da loja
+- `src/data/history.ts`: linha do tempo institucional
 
 ### Dados gerados
 
@@ -227,7 +267,7 @@ Principais superficies:
 - socio torcedor com comparacao de planos
 - rodape com navegacao e canais oficiais
 
-React renderiza a estrutura principal. Vue e usado apenas onde ha interacao isolada e local, como match center, comparador de socio e explorador de elenco.
+React renderiza toda a estrutura principal e as interacoes locais do site.
 
 ## Estilo
 
@@ -250,9 +290,10 @@ npm run build
 Antes de publicar:
 
 1. rode a raspagem
-2. confirme que `public/team-logos` tem os escudos
-3. rode o build
-4. teste a build com preview
+2. rode `npm run check`
+3. confirme que `public/team-logos` tem os escudos
+4. rode o build
+5. teste a build com preview
 
 ```bash
 npm run preview
@@ -263,6 +304,7 @@ npm run preview
 Antes de abrir PR ou publicar:
 
 - `npm run scrape:flashscore`
+- `npm run check`
 - `npm run build`
 - validar home em desktop
 - validar home em mobile
@@ -270,6 +312,7 @@ Antes de abrir PR ou publicar:
 - conferir se os escudos aparecem nos jogos e na tabela
 - conferir se o plano premium do socio esta totalmente visivel
 - conferir se noticias mostram titulo sem depender de scroll interno
+- conferir se as rotas internas abrem sem `#/`
 
 ## Proximas evolucoes
 

@@ -3,22 +3,38 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "scripts": {
+    "verify:runtime": "node scripts/verify-runtime.mjs",
     "dev": "vite --host 127.0.0.1",
     "scrape:flashscore": "node scripts/scrape-flashscore.mjs",
     "watch:flashscore": "node scripts/watch-flashscore.mjs",
+    "lint": "node scripts/lint-project.mjs",
+    "smoke": "node scripts/smoke-project.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/routes.test.ts tests/scrape-flashscore.test.ts",
+    "check": "npm run lint && npm run smoke && npm run typecheck && npm run test",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
-    "@tailwindcss/vite": "latest",
-    "@vitejs/plugin-react": "latest",
-    "@vitejs/plugin-vue": "latest",
-    "framer-motion": "^12.38.0",
-    "react": "latest",
-    "react-dom": "latest",
-    "tailwindcss": "latest",
-    "vite": "latest",
-    "vue": "latest"
+    "@fontsource/barlow-condensed": "5.2.8",
+    "@fontsource/manrope": "5.2.8",
+    "@tailwindcss/vite": "4.2.2",
+    "@vitejs/plugin-react": "6.0.1",
+    "framer-motion": "12.38.0",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "tailwindcss": "4.2.2",
+    "vite": "8.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "25.6.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3"
   }
 }
