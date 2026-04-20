@@ -105,6 +105,7 @@ export function Header({ route }) {
 
   const desktopNavItems = useMemo(
     () => [
+      { label:"In\u00edcio", path:"/" },
       { label:"Partidas", path:"/matchday" },
       {
         label:"Clube",

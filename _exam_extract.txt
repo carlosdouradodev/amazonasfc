@@ -1,0 +1,1753 @@
+===== PAGE 1 =====
+
+INSTRUÇÕES PARA REALIZAÇÃO DA PROVA
+LEIA COM MUITA ATENÇÃO
+1. Esta prova contém 50 questões, cada uma com 5 alternativas das quais
+somente uma é correta.
+2. A folha de respostas encontra-se no final deste caderno. Ela deve ser des-
+tacada, preenchida e devolvida ao examinador ao término da prova.
+3. Será anulada a questão em que for assinalada mais de uma alternativa ou
+que estiver em branco.
+4. Assinale a resposta preenchendo totalmente, a caneta (azul ou preta), o
+respectivo alvéolo, com o cuidado de não ultrapassar o espaço dele.
+5. Não assina­le as respostas com um “X”, pois essa sinalização não será
+considerada.
+EXEMPLO DE PREENCHIMENTO
+1-
+B
+A
+C
+D
+E
+2-
+B
+A
+C
+D
+E
+3-
+B
+A
+C
+D
+E
+4-
+B
+A
+C
+D
+E
+5-
+B
+A
+C
+D
+E
+6. Preencha os campos “nome” e “número” cuidadosamente para não ultra-
+passá-los.
+7. Não rasure, não dobre, nem amasse a folha de respostas.
+8. Não escreva nada na folha de respostas fora dos campos reservados.
+TIPO C-2
+CONCURSO DE BOLSAS
+NÚMERO
+NOME
+ANGLO VESTIBULARES
+2069342
+CB-C2-2018.indd   1
+01/18/18   4:10 PM
+
+
+===== PAGE 2 =====
+
+ANGLO VESTIBULARES  ♣
+– 2 –
+CLASSIFICAÇÃO PERIÓDICA DOS ELEMENTOS
+(IUPAC. 21.01.2011.)
+Série dos Lantanídios
+Série dos Actinídios
+Número Atômico
+Símbolo
+Massa Atômica*
+(  ) = no de massa do
+isótopo mais estável
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+1
+H
+1,0
+3
+Li
+7,0
+4
+Be
+9,0
+11
+Na
+23,0
+19
+K
+39,0
+37
+Rb
+85,5
+55
+Cs
+133
+12
+Mg
+24,0
+20
+Ca
+40,0
+38
+Sr
+87,6
+56
+Ba
+137
+88
+Ra
+(226)
+87
+Fr
+(233)
+21
+Sc
+45,0
+22
+Ti
+48,0
+40
+Zr
+91,0
+72
+Hf
+178
+104
+Rf
+(261)
+23
+V
+51,0
+41
+Nb
+93,0
+73
+Ta
+181
+105
+Db
+(262)
+24
+Cr
+52,0
+42
+Mo
+96,0
+74
+W
+184
+106
+Sg
+(266)
+25
+Mn
+55,0
+43
+Tc
+(98)
+75
+Re
+186
+107
+Bh
+(264)
+26
+Fe
+56,0
+44
+Ru
+101
+76
+Os
+190
+108
+Hs
+(277)
+27
+Co
+59,0
+45
+Rh
+103
+77
+Ir
+192
+109
+Mt
+(268)
+28
+Ni
+59,0
+46
+Pd
+106
+78
+Pt
+195
+110
+Ds
+(271)
+29
+Cu
+63,5
+47
+Ag
+108
+79
+Au
+197
+111
+Rg
+(272)
+30
+Zn
+65,4
+48
+Cd
+112
+80
+Hg
+200
+112
+Cn
+(277)
+114
+F
+(289)
+116
+Lv
+(293)
+39
+Y
+89,0
+57-71
+Série dos
+Lantanídios
+89-103
+Série dos
+Actinídios
+5
+B
+11,0
+13
+A
+27,0
+31
+Ga
+70,0
+49
+In
+115
+81
+T
+204
+6
+C
+12,0
+14
+Si
+28,0
+32
+Ge
+72,6
+50
+Sn
+119
+82
+Pb
+207
+7
+N
+14,0
+15
+P
+31,0
+33
+As
+75,0
+51
+Sb
+122
+83
+Bi
+209
+8
+O
+16,0
+16
+S
+32,0
+34
+Se
+79,0
+52
+Te
+128
+84
+Po
+(209)
+9
+F
+19,0
+17
+C
+35,5
+35
+Br
+80,0
+53
+ I
+127
+85
+At
+(210)
+10
+Ne
+20,0
+2
+He
+4,0
+18
+Ar
+40,0
+36
+Kr
+84,0
+54
+Xe
+131
+86
+Rn
+(222)
+57
+La
+139
+58
+Ce
+140
+59
+Pr
+141
+60
+Nd
+144
+61
+Pm
+(145)
+62
+Sm
+150
+63
+Eu
+152
+64
+Gd
+157
+65
+Tb
+159
+66
+Dy
+163
+67
+Ho
+165
+68
+Er
+167
+69
+Tm
+169
+70
+Yb
+173
+71
+Lu
+175
+89
+Ac
+(227)
+90
+Th
+232
+91
+Pa
+231
+92
+U
+238
+93
+Np
+(237)
+94
+Pu
+(244)
+95
+Am
+(243)
+96
+Cm
+(247)
+97
+Bk
+(247)
+98
+Cf
+(251)
+99
+Es
+(252)
+100
+Fm
+(257)
+101
+Md
+(258)
+102
+No
+(259)
+103
+Lr
+(262)
+* Valores de Massa Atômica arredondados
+CB-A2-2017.indd   2
+12/22/16   4:10 PM
+
+
+===== PAGE 3 =====
+
+★CONCURSO DE BOLSAS
+– 3 –
+Texto para as questões 3 e 4
+O trecho a seguir foi extraído de O velho e o mar (1952), 
+do escritor americano Ernest Hemingway (Biblioteca 
+Folha, São Paulo, 2003, p. 22). O romance trata dos 
+limites do homem diante das forças da natureza, por 
+meio da saga do velho pescador Santiago, que enfren-
+ta o alto-mar sozinho, numa pequena embarcação, 
+duelando por três dias com um peixe enorme.
+“O velho pensava sempre no mar como sendo ‘la 
+mar’, que é como lhe chamam em espanhol quando 
+verdadeiramente lhe querem bem. Às vezes aqueles 
+que o amam lhe dão nomes vulgares, mas sempre 
+como se fosse uma mulher. Alguns dos pescadores 
+mais novos, aqueles que usam boias como ﬂ utua-
+dores para as suas linhas e têm barcos a motor, (…) 
+ao falarem do mar dizem ‘el mar’, que é masculino. 
+Falam do mar como de um adversário, de um lugar 
+ou mesmo de um inimigo. Entretanto, o velho pesca-
+dor pensava sempre no mar no feminino e como se 
+fosse uma coisa que concedesse ou negasse gran-
+des favores; mas se o mar praticasse selvagerias ou 
+crueldades era só porque não podia evitá-lo. ‘A lua 
+afeta o mar tal como afeta as mulheres’, reﬂ etiu o 
+velho”.
+3.
+Sobre o texto, só está correto o que se aﬁ rma em:
+A) A expressão “la mar” está em discurso direto, intro-
+duzindo a fala dos espanhóis, que tratavam o mar
+no feminino.
+B) A expressão masculina “el mar” indica a fala dos
+pescadores mais antigos se referindo ao mar.
+C) O trecho “o velho pescador pensava sempre no
+mar no feminino” está em discurso indireto livre.
+D) O trecho “reﬂ etiu o velho” constitui uma fala do
+narrador, que apresenta em discurso direto a fala
+do personagem: “a lua afeta o mar como afeta as
+mulheres”.
+E) Como o narrador usa o verbo “reﬂ etir”, a fala “a
+lua afeta o mar como afeta as mulheres” está em
+discurso indireto livre.
+4.
+Com base nesse fragmento, só não se pode aﬁ rmar
+que:
+A) O sentido de uma palavra é cultural; logo, reﬂ ete
+os valores de determinado grupo, em determinado
+momento histórico.
+B) A mesma palavra, em contextos diferentes, apre-
+senta sentidos diferentes, veiculando os valores
+dos respectivos grupos a que pertencem os interlo-
+cutores.
+C) A mesma palavra “mar” tem sentidos diferentes,
+conforme seja apresentada no gênero masculino e
+no feminino.
+D) “Mar”, para os mais antigos, associa-se ao univer-
+so feminino, instável e sedutor, devendo ser objeto
+de paciente conquista; para os mais novos, associa-
+-se ao universo masculino, remetendo à ideia de
+inimigo a ser combatido.
+E) A palavra “mar” apresenta um sentido único, de-
+ﬁ nido em dicionário, que vale para qualquer si-
+tuação, independentemente do contexto em que
+é veiculada e dos valores culturais dos interlocu-
+tores.
+QUESTÕES
+Texto para a questão 1
+Perdi a decência
+Ontem eu perdi a noção
+Perdi a compostura, a cabeça
+Eu perdi a razão
+Perdi as chaves do apê
+E dormi no corredor
+Naturalmente, eu perdi a moral
+Com minha mulher e com o zelador
+Acordei no melhor estilo
+Sexo, drogas e rock n’ roll
+Não me dei por vencido
+E muito menos
+Dei alguma explicação
+Meti o pé na porta
+E dediquei essa canção
+Pra você que me fez perder a linha
+E botou fogo no meu coração 
+(Cérebro Eletrônico, “Decência”, Tatá Aeroplano /
+Fernando Maranho / Gustavo Souza,
+Deus e o diabo no liquidiﬁ cador, 2010) 
+1.
+Marque a construção incorreta:
+A) No trecho “dediquei essa canção pra você”, o ter-
+mo grifado pode ser substituído pelo pronome oblí-
+quo “a”, com função de objeto direto.
+B) Em “dediquei essa canção pra você”, o termo gri-
+fado pode ser substituído pelo pronome oblíquo
+“lhe”, com função de objeto indireto.
+C) Em “botou fogo no meu coração”, o termo grifado
+não pode ser substituído pelo pronome “lhe”.
+D) Não é correta a construção “botou-no fogo”.
+E) Todos os complementos de “perder” podem ser
+substituídos pelo pronome “a”, menos no verso da
+segunda estrofe.
+2.
+Leia o texto a seguir:
+papo de índio
+veiu uns ômi di saia preta
+cheiu di caixinha e pó branco
+qui eles disserum qui chamava açucri
+aí eles falarum e nós fechamu a cara
+depois eles arrepitirum e nós fechamu o corpo
+aí eles insistirum e nós comemu eles.
+(Chacal, Muito prazer)
+Assinale a alternativa incorreta em relação ao texto 
+acima:
+A) o pronome “nós” deveria ser escrito como “nóis”,
+já que no texto a escrita tenta reproduzir a fala do
+índio;
+B) os pronomes foram empregados de acordo com a
+norma culta, apesar de as graﬁ as da maioria das
+palavras estarem inadequadas a esse padrão;
+C) a última ocorrência de “eles” está em desacordo
+com a norma culta, já que pronome reto não tem
+função de objeto;
+D) transpondo “nós comemu eles” para o padrão cul-
+to da língua, tem-se “nós os comemos”;
+E) na variante popular, pronomes retos funcionam
+como complemento verbal.
+
+
+===== PAGE 4 =====
+
+– 4 –
+O trecho anterior retrata um momento fundamental 
+do romance de José de Alencar porque
+A) Berta descobre que seu verdadeiro pai é Luís Galvão.
+B) Berta salva Brás da armadilha criada para ele por
+Linda.
+C) Brás consegue fazer com que Berta seja atacada pe-
+la serpente caçada por ele.
+D) Berta prepara-se para matar a serpente que encon-
+trara no quarto de Linda.
+E) Berta consegue domar a serpente que encontrara
+no quarto de Linda.
+8.
+O fragmento abaixo pertence a Vidas secas, de Graci-
+liano Ramos:
+Chegaram à igreja, entraram (…) Os meninos também
+se espantavam. No mundo, subitamente alargado,
+viam Fabiano e Sinhá Vitória muito reduzidos, meno-
+res que as ﬁ guras dos altares. Não conheciam altares,
+mas presumiam que aqueles objetos deviam ser pre-
+ciosos. As luzes e os cânticos extasiavam-nos. De luz
+havia, na fazenda, o fogo entre as pedras da cozinha e
+o candeeiro de querosene pendurado pela asa numa
+vara que saía da taipa; de canto, o bendito de Sinhá Vi-
+tória e o aboio de Fabiano. O aboio era triste, uma can-
+tiga monótona e sem palavras que entorpecia o gado.
+Contextualizando-se esse fragmento na obra acima re-
+ferida, deduz-se que
+I. uma família nordestina, por mais privações que
+enfrente, não deixa de expressar regularmente a
+mais profunda fé religiosa.
+II. entre a vida rural e a das cidades há diferenças cul-
+turais, responsáveis pela reação de espanto dessas
+rústicas personagens.
+III. os meninos sentem a estreiteza do mundo de suas
+experiências familiares comparando-as ao encan-
+tamento das novas.
+Está correto o que se aﬁ rma em
+A) III, somente.
+D) II e III, somente.
+B) I e II, somente.
+E) I, II e III.
+C) I e III, somente.
+9. 
+(Cristo do Passo do Horto,
+Aleijadinho, início do século XVIII)
+Texto para a questão 5 
+O texto abaixo é a transcrição de um anúncio publici-
+tário veiculado na revista Veja de no 26, em setembro 
+de 2003.
+“A SulAmérica, uma das maiores seguradoras do 
+Brasil, com mais de 6 milhões de clientes em todo o 
+país, se uniu a um dos mais importantes conglome-
+rados ﬁ nanceiros e ao 5o maior grupo de seguros do 
+mundo: o ING.
+Presente em 60 países, com 60 milhões de clien-
+tes e administrando ativos de mais de 500 bilhões de 
+dólares, o ING se associou à SulAmérica para ofere-
+cer os melhores produtos de seguros, previdência e 
+investimentos, através de nossos 6.300 funcionários, 
+juntamente com os 26.000 corretores. 
+Agora você conta com ainda mais experiência, 
+ainda mais conﬁ ança e ainda mais agilidade. Quanto 
+à modernidade, é só olhar para a nossa nova marca: 
+Sul América associada ao ING. Moderna para sempre.”
+5.
+Assinale a alternativa incorreta:
+A) A precisão dos números aumenta consideravel-
+mente o poder argumentativo do texto. A noção de
+exatidão vem associada à de certeza.
+B) O número expresso no trecho “mais de 6 milhões
+de clientes em todo o país” reforça a ideia de que
+a SulAmérica é uma das maiores seguradoras do
+Brasil.
+C) Os dados numéricos criam efeito de verdade, isto é,
+a impressão de estarem revelando dados incontes-
+táveis.
+D) As expressões “60 países”, “60 milhões de clien-
+tes”, “500 milhões de dólares”, “6.300 funcioná-
+rios” e “26.000 corretores” indicam o produto ﬁ nal
+da união da SulAmérica com o grupo ING.
+E) Se substituíssemos a expressão “5o maior grupo de
+seguros do mundo” por “um dos maiores grupos
+de seguros do mundo” o efeito de sentido seria o
+mesmo.
+6.
+Em qual das alternativas abaixo ocorrem orações
+substantivas em que a presença da conjunção inte-
+grante “que” instaura o pressuposto da certeza e a da
+conjunção integrante “se” instaura o pressuposto da
+dúvida?
+A) Não compreendo que você tenha deixado de amar.
+Se você deixou de amar, o amor não existe mais.
+B) As pessoas que amam são mais felizes.
+Não sei se você realmente desconhece o amor.
+C) Eu entendo que fui o culpado.
+Se fui o culpado, serei julgado pelo tribunal de mi-
+nha consciência.
+D) Não sabia que a bebida destruiria nossas vidas.
+Não sei se a bebida é o veneno de nossa relação.
+E) Sou o homem que a fez mulher.
+Nunca entendi se você de fato me amou.
+7.
+Leia o fragmento abaixo para responder ao que se pede:
+“Com o toque desse brando serpear sentiu Berta a do-
+çura de uma carícia; a boicininga titilava de volúpia ao
+tépido calor da cútis acetinada; e escondendo a mons-
+truosa cabeça na conchinha da mão que a menina re-
+colhera ao seio, caiu no letargo.”
+(ALENCAR, José de, Til. Ateliê Editorial, 2012.)
+
+
+===== PAGE 5 =====
+
+★CONCURSO DE BOLSAS
+– 5 –
+D) clima temperado, trabalho escravo, produção para
+o mercado interno e latifúndios.
+E) latifúndios, monocultura, trabalho escravo e expor-
+tação de matérias-primas para Portugal.
+12.
+(FATEC) — A assinatura da lei Áurea, que aboliu a es-
+cravidão no Brasil, completou no ano de 2008 cento
+e vinte anos. Assinada pela princesa Isabel, ﬁ lha do
+então imperador D. Pedro II, esta lei punha ﬁ m à quase
+quatrocentos anos de escravidão. Nesse longo perío-
+do os negros cativos
+A) se conformaram com sua situação e, na maioria
+dos casos, ajudavam os senhores de escravos a ad-
+ministrar o cotidiano da senzala.
+B) se enquadraram rapidamente no mundo escravo,
+pois já estavam acostumados com as formas de es-
+cravidão existentes na África.
+C) apresentaram diferentes formas de resistência
+como sabotagens na produção do açúcar, fugas,
+agressões a feitores e senhores, e a preservação de
+crenças e ritos africanos.
+D) chegaram a montar grupos de guerreiros que assal-
+tavam as senzalas, assassinavam senhores e feito-
+res, e conseguiram criar um estado negro indepen-
+dente no Maranhão.
+E) perderam completamente suas tradições culturais
+tais como a religião, a língua e as festas, que foram
+substituídas pela cultura do branco.
+13.
+Observe a charge.
+AS PRÓXIMAS ELEIÇÕES… “DE CABRESTO”
+SOBERANIA
+POLÍTICO
+ELEITOR
+ELA — É o Zé Besta?
+ELE — Não, é o Zé Burro!
+Ela critica uma prática política vigente durante 
+A) o Segundo Reinado
+B) a República Velha
+C) o Estado Novo
+D) a República Populista
+E) o Regime Militar
+14.
+(PUC) — As Guerras Púnicas, entre romanos e cartagi-
+neses, duraram de 264 a 146 a.C. Entre seus resultados
+ﬁ nais, podemos considerar que elas
+A) contiveram a expansão romana em direção ao mar
+Mediterrâneo, pois as ilhas ao sul da península itá-
+lica passaram ao controle cartaginês.
+B) fortaleceram a presença romana na região do mar
+Mediterrâneo, com o estabelecimento de provín-
+cias nas terras conquistadas.
+C) eliminaram os gastos militares do Império Romano,
+pois impediram o surgimento de revoltas e tensões
+sociais.
+Essa imagem pode ser inserida na estética barroca por 
+todos os traços abaixo, exceto:
+A) Demonstração de equilíbrio racionalista.
+B) Manifestação de religiosidade.
+C) Sugestão de movimento.
+D) Apego ao detalhe.
+E) Expressão dramática.
+Para responder à questão 10, observe o texto abaixo. 
+No entanto Jacinto, desesperado com tantos desas-
+tres humilhadores — as torneiras que dessoldavam, 
+os elevadores que emperravam, o Vapor que se en-
+colhia, a Eletricidade que se sumia, decidiu valorosa-
+mente vencer as resistências ﬁ nais da Matéria e da 
+Força por novas e mais poderosas acumulações de 
+Mecanismos. E nessas semanas de Abril, enquanto 
+as rosas desabrochavam, a nossa agitada casa, entre 
+aquelas quietas casas dos Campos Elísios que pregui-
+çavam ao sol, incessantemente tremeu, envolta num 
+pó de caliça e de empreitada, com o bruto picar de 
+pedra, o retininte martelar de ferro. Nos silenciosos 
+corredores, onde me era doce fumar antes do almo-
+ço um pensativo cigarro, circulavam agora, desde 
+madrugada, ranchos de operários, de blusas brancas, 
+assobiando o Petit-Bleu, e intimidando os meus pas-
+sos, quando eu atravessava em fralda e chinelas para 
+o banho ou para outros retiros. Apenas se varava com
+perícia algum andaime obstruindo as portas — logo
+se esbarrava com uma pilha de tábuas, uma seira de
+ferramentas ou um balde enorme de argamassa. E os
+pedaços de soalho levantado mostravam tristemente,
+como num cadáver aberto, todos interiores do 202, a
+ossatura, os sensíveis nervos de arame, os negros in-
+testinos de ferro fundido.
+(Fragmento de A cidade e as Serras, de Eça de Queirós) 
+10.
+Em A cidade e as Serras, o narrador testemunha, José
+Fernandes, conta a história de Jacinto e, ao mesmo
+tempo, embute críticas ao comportamento do amigo
+gerando trechos com sutil ironia. Isso pode ser obser-
+vado em qual trecho?
+A) “(Jacinto) decidiu valorosamente vencer as resis-
+tências ﬁ nais da Matéria e da Força por novas e
+mais poderosas acumulações de Mecanismos.”
+B) “Nos silenciosos corredores, onde me era doce fu-
+mar antes do almoço um pensativo cigarro, circu-
+lavam agora, desde madrugada, ranchos de operá-
+rios…”
+C) “a nossa agitada casa (…) tremeu, envolta num pó
+de caliça e de empreitada, com o bruto picar de pe-
+dra, o retininte martelar de ferro.”
+D) “E os pedaços de soalho levantado mostravam tris-
+temente (…) todos interiores do 202…”
+E) “(…) logo se esbarrava com uma pilha de tábuas,
+uma seira de ferramentas ou um balde enorme de
+argamassa.”
+11.
+(FATEC) — São características da colonização no Brasil:
+A) monopólio, servidão coletiva, industrialização e po-
+licultura.
+B) minifúndios, policultura, trabalho escravo e produ-
+ção para o mercado interno.
+C) clima tropical, servidão indígena, minifúndios e po-
+licultura.
+
+
+===== PAGE 6 =====
+
+– 6 –
+Assinale a alternativa que apresenta todas as aﬁ rma-
+tivas corretas. 
+A) I e II
+D) II e IV
+B) I e III
+E) III e IV
+C) II e III
+18.
+(UNISC) — Moradores de Maringá sentiram um tre-
+mor na manhã de sexta-feira, 2 de setembro de 2011,
+por volta das 11h, reﬂ exo do terremoto de 6,7 graus
+na escala Richter que atingiu a região de Santiago Del
+Estero, no norte da Argentina, a cerca de 1.550km de
+Maringá, ao norte do Paraná, conforme mapa abaixo.
+EPICENTRO
+30km a oeste de Añatuya, província
+de Santiago del Estero, Argentina
+1.550km
+Curitiba
+Maringá
+BRASIL
+Paraguai
+PR
+SC
+RS
+Uruguai
+66ºW
+60ºW
+54ºW
+48ºW
+32ºS
+28ºS
+24ºS
+20ºS
+16ºS
+(Adaptado do Jornal O diário de Maringá, acessado em 
+23/09/2011, http://tremordeterra.blogspot.com/2011/09/
+tremor-na-argentina-possibilidade-ser.html)
+Esta distância é representada no mapa por 4cm. De-
+termine a escala dessa representação.
+A) 1:6.200 
+D) 1:620.000
+B) 1:62.000
+E) 1:38.750.000
+C) 1:387.500
+19.
+(UFF) — O espaço geográﬁ co encontra-se organizado
+por meio de redes, que estabelecem nexos entre luga-
+res mais ou menos distantes entre si, sobrepondo-se
+ao padrão da continuidade territorial.
+Metrópole (consumo e distribuição)
+Fábrica (embalagem, leite em pó, etc.)
+Posto de coleta (resfriamento)
+Fazenda (produção de leite)
+Fluxo das fazendas e postos de coleta
+Fluxo de leite e derivados para os consumidores
+Bacia Leiteira Hipotética
+D) permitiram a expansão comercial de Roma por toda
+a península itálica e em direção ao ocidente, com a
+decorrente conquista da Gália.
+E) reduziram consideravelmente o número de escra-
+vos no Império Romano, pois a maioria deles foi
+alistada nas tropas e morreu em combate.
+15.
+(UEL) — Os astecas sacriﬁ cavam prisioneiros de guer-
+ra para alimentar seus deuses. O capturado tinha seu
+coração arrancado, era decapitado e tinha seu sangue
+bebido pelo captor que, depois, levava o corpo para
+casa, esfolava-o, comia-o com milho e vestia sua pele.
+É correto aﬁ rmar que estes rituais no mundo dos aste-
+cas eram de ordem simbólica, uma vez que:
+A) os vencidos deveriam pagar um tributo de sangue
+aos astecas, que viam a si próprios como deuses.
+B) os sacerdotes astecas exigiam oferendas de sangue
+para que não faltasse alimento em seus templos.
+C) um grande número de sacrifícios representava um
+reforço do abastecimento alimentar, evitando a ca-
+restia.
+D) o captor do prisioneiro se vingava do inimigo, co-
+mendo suas carnes e vestindo sua pele.
+E) os deuses exigiam oferendas do bem mais precioso
+que os homens possuíam, a vida, para que o mun-
+do fosse preservado.
+16.
+(MACK) — São comumente apontadas como condi-
+ções históricas que favoreceram a eclosão da Revolu-
+ção Industrial na Inglaterra a partir da segunda metade
+do século XVIII:
+I. O grande acúmulo de capitais durante o período
+do capitalismo comercial.
+II. O fortalecimento da monarquia absolutista, após
+a Revolução Gloriosa, e a consequente adoção de
+uma política mercantilista.
+III. A mecanização de importantes setores industriais,
+como o têxtil e o metalúrgico.
+IV. A disponibilidade de mão de obra barata nas ci-
+dades, em virtude do êxodo rural provocado pelos
+cercamentos.
+V. A existência, no país, de jazidas abundantes de fer-
+ro e carvão.
+Estão corretas
+A) apenas I e II.
+D) apenas I, III, IV e V.
+B) apenas I, II e III.
+E) I, II, III, IV e V
+C) apenas II, III e IV.
+17.
+(AMAN) — Sobre a produção, o consumo e as reser-
+vas de petróleo no mundo, leia as aﬁ rmativas abaixo:
+I. A Arábia Saudita é o país que detém as maiores re-
+servas em barris de petróleo e é o maior produtor
+mundial;
+II. Os Estados Unidos apesar de ﬁ gurarem entrem
+os maiores produtores, são muito dependentes da
+importação de petróleo;
+III. A Venezuela ﬁ gura entre os países com as maiores
+reservas, porém não faz parte dos grandes produ-
+tores e necessita importar esse produto;
+IV. A Organização dos Países Exportadores de Petró-
+leo (OPEP) é responsável por mais da metade da
+produção mundial e tem como importantes inte-
+grantes a Federação Russa e os Estados Unidos.
+
+
+===== PAGE 7 =====
+
+★CONCURSO DE BOLSAS
+– 7 –
+22.
+(FUVEST) — Observe os mapas.
+MAIORES ESTOQUES DE
+ÁGUAS SUBTERRÂNEAS
+Aquífero
+Guarani
+BACIAS
+SEDIMENTARES
+920km
+(REBOUÇAS, in “Patrimônio Ambiental Brasileiro”,
+2003 e SIMIELLI, Geoatlas, 2005.)
+A correspondência existente entre as áreas dos princi-
+pais estoques subterrâneos de água e as áreas de ba-
+cias sedimentares pode ser explicada, dentre outros, 
+pelo fato de
+A) a porosidade ser, em geral, maior em terrenos sedi-
+mentares, possibilitando maior armazenamento.
+B) o grau de fraturamento ser, em geral, maior em
+terrenos sedimentares, possibilitando maior inﬁ l-
+tração.
+C) as bacias sedimentares estarem localizadas em
+área s de maiores volumes anuais de precipitação.
+D) as bacias sedimentares serem constituídas por ter-
+renos mais antigos, armazenando mais água.
+E) as bacias sedimentares apresentarem materiais
+mais impermeáveis, facilitando a inﬁ ltração.
+23.
+Quando se inicia a mitose, os cromossomos começam
+a se condensar,
+A) sofrendo duplicação durante a metáfase e separa-
+ção por divisão centromérica na anáfase.
+B) já estando duplicados desde a intérfase e atingindo
+condensação máxima na metáfase.
+C) apresentando condensação máxima na telófase,
+quando ocorre sua duplicação completa.
+D) com a condensação terminando na metáfase, ocor-
+rendo a duplicação durante a anáfase.
+E) atingindo o grau máximo de condensação durante
+a prófase, após a qual ocorre a duplicação.
+24.
+Analise o quadro a seguir:
+Parasitose
+Causador
+Transmissor e/ou
+hospedeiro
+intermediário
+Transmissão
+úlcera de
+Bauru
+A
+mosquito-palha
+B
+C
+platelminto
+caramujo
+D
+teníase
+E
+porco
+F
+As letras A, B, C, D, E e F, podem ser substituídas cor-
+retamente e respectivamente por:
+A) inseto; fezes depositadas na picada; elefantíase; in-
+gestão de larvas terrestres; nematelminto; ingestão
+de ovos em alimentos contaminados.
+B) protozoário; injeção de saliva na picada; esquis-
+tossomose; penetração de cercárias aquáticas pela
+pele; platelminto; ingestão de carne com cisticercos.
+0
+50
+100km
+Lins
+Bauru
+Jaú
+Botucatu
+Avaré
+Capital Regional
+Centro Sub-Regional
+Centro de Zonas
+Centro Local
+Ligação de Subordinação
+(CORRÊA, R. Esquemas (Geo)gráﬁ cos. Textos NEPEC, no 4, 
+Rio de Janeiro: UERJ, 2010, p. 14 e 23.)
+Os respectivos esquemas de tipos de rede apresenta-
+dos enfatizam, mais diretamente, a seguinte caracte-
+rística da organização espacial: 
+A) hierarquia entre lugares.
+B) desigualdade entre classes.
+C) diferença entre escalas.
+D) isolamento entre regiões.
+E) concorrência entre produtores.
+20.
+(UFRGS-modiﬁ cada) — Sobre a demograﬁ a brasileira,
+são feitas as seguintes aﬁ rmações:
+I. A combinação do aumento das taxas de fecundi-
+dade com a diminuição das taxas de mortalidade
+aponta para uma tendência de envelhecimento da
+população.
+II. Assim como a fecundidade do passado é funda-
+mental para o crescimento atual da população, a
+fecundidade atual tem papel de destaque para o
+crescimento futuro.
+III. A violência urbana é uma das causas mais frequen-
+tes da mortalidade entre os jovens (dos 15 aos 19
+anos) do sexo masculino em algumas das grandes
+metrópoles brasileiras.
+Qual(is) está(ão) correta(s)?
+A) Apenas I.
+D) Apenas I e II.
+B) Apenas II.
+E) Apenas II e III.
+C) Apenas III.
+21.
+(UFCE) — Atualmente não existem vulcões ativos no
+Brasil, embora tenham existido em épocas geológicas
+passadas. Assinale a alternativa que indica correta-
+mente a maior área territorial onde se encontram evi-
+dências de vulcanismo no Brasil.
+A) Domínio das Caatingas com relevos aplainados e
+solos rasos e pedregosos.
+B) Região do Pantanal e sua intensa rede de drenagem
+com solos arenosos.
+C) Zona da Mata e seus ambientes litorâneos onde se
+registram constantes tremores de terra.
+D) Planalto Meridional com derrames basálticos e pre-
+sença de solos denominados Terras Roxas.
+E) Domínio do Cerrado com relevos aplainados e so-
+los arenosos denominados Latossolos.
+
+
+===== PAGE 8 =====
+
+– 8 –
+Comprimento de onda (mμ)
+luz
+390-430
+violeta
+430-470
+azul
+470-540
+verde
+540-600
+amarela
+600-650
+laranja
+650-760
+vermelha
+Três plantas da mesma espécie são colocadas em um 
+mesmo ambiente e passam pelo seguinte tratamento 
+luminoso:
+Planta I: recebe exclusivamente luz verde;
+Planta II: recebe exclusivamente luz vermelha;
+Planta III: recebe exclusivamente luz amarela.
+Com relação a essas plantas, pode-se prever que
+A) I produzirá mais oxigênio que II e III.
+B) II produzirá mais oxigênio que I e III.
+C) III produzirá mais oxigênio que I e II.
+D) apenas a planta III produzirá oxigênio.
+E) I, II e III produzirão a mesma quantidade de oxigênio.
+27.
+(PUC) — Os desenhos abaixo, I e II, representam, esque-
+maticamente, a germinação de sementes de feijão e de
+milho.
+Tegumento
+da semente
+Cotilédones
+Hipocótilo
+Folhas
+Epicótilo
+Hipocótilo
+Cotilédones
+murchos
+Raízes
+laterais
+Raiz
+primária
+Primeira
+folha
+Raízes
+adventícias
+Coleóptilo
+Raiz
+primária
+Coleóptilo
+I
+II
+Com base nos esquemas e nos seus conhecimentos 
+de Biologia Vegetal, é correto aﬁ rmar que:
+A) no feijão, uma dicotiledônea, as reservas alimenta-
+res da semente encontram-se no endosperma.
+B) no milho, uma monocotiledônea, as reservas ali-
+mentares da semente encontram-se no cotilédone.
+C) no feijão, uma dicotiledônea, o sistema radicu-
+lar é do tipo axial/pivotante e as folhas são pa-
+ralelinérvea s.
+C) nematelminto; penetração de larvas aquáticas pelo
+pé; cisticercose; ingestão de cistos pela água conta-
+minada; protozoário; penetração de larvas no san-
+gue através da picada.
+D) platelminto; ingestão de ovos em material fecal;
+amebíase; injeção de saliva na picada; protozoário;
+transfusões de sangue com o parasita.
+E) molusco; penetração de cisticercos pela pele; ama-
+relão; penetração de ovos pela pele; nematelminto;
+entrada de larvas pelo intestino.
+Observe o esquema do tubo digestório humano e uti-
+lize-o para responder à questão 25:
+1
+7
+8
+3
+6
+5
+4
+2
+25.
+Sobre a identidade e função de alguns dos órgãos in-
+dicados no esquema, podemos dizer que:
+A) 2 é o fígado, órgão que absorve os alimentos dige-
+ridos e produz um suco digestivo ácido.
+B) 8 é o estômago, responsável pela síntese da tripsi-
+na, que atua na digestão das gorduras.
+C) 4 é o duodeno, parte inicial do intestino grosso que
+produz a pepsina, enzima responsável pela diges-
+tão do amido.
+D) 7 é o pâncreas, órgão que produz a bile, material
+que contém as enzimas que digerem gorduras.
+E) 6 é o intestino delgado, local de ação do suco enté-
+rico, suco pancreático e da bile.
+26.
+O gráﬁ co abaixo mostra o espectro de absorção da luz
+pelas cloroﬁ las a e b em função dos diferentes compri-
+mentos de onda que compõem a luz branca:
+Clorofila b
+Clorofila a
+Comprimento de onda m+ 
+Absorção
+400
+500
+700
+600
+
+
+===== PAGE 9 =====
+
+★CONCURSO DE BOLSAS
+– 9 –
+A seguir estão representadas quatro vitaminas:
+O
+O
+HO
+—
+—
+HO
+—
+OH
+OH
+I
+—
+II
+H3C
+CH3
+CH3
+CH3
+OH
+CH3
+III
+O
+O
+CH3
+CH3
+CH3
+CH3
+CH3
+CH3
+IV
+HO
+COOH
+CH3
+CH3
+OH
+O
+N
+H
+Dentre elas, é adequado adicionar, respectivamente, 
+a sucos de frutas puros e a margarinas, as seguintes:
+A) I e IV
+B) II e III
+C) III e IV
+D) III e I
+E) IV e II
+31.
+Entre os principais indícios de ocorrência de transfor-
+mação química em materiais misturados, temos:
+I. ocorrência de efervescência;
+II. aparecimento ou desaparecimento ou mudança de
+coloração;
+III. precipitação de sólido;
+IV. desaparecimento de sólido.
+Consideremos as misturas de materiais seguintes:
+1. mármore + ácido clorídrico;
+2. CO2(g) + solução aquosa de Ca(OH)2 (água de cal);
+3. solução aquosa de soda cáustica + fenolftaleína.
+Assinale a alternativa na qual I, II, III e IV estão correta-
+mente associados com 1, 2 e 3.
+1
+2
+3
+A)
+I
+II e III
+IV
+B)
+IV
+II e III
+I
+C)
+III
+II
+I e IV
+D)
+II
+III
+I e IV
+E)
+I e IV
+III
+II
+D) no milho, uma monocotiledônea, o sistema radicular
+é do tipo fasciculado e as folhas são paralelinérveas.
+E) no feijão, uma dicotiledônea, as ﬂ ores possuem es-
+trutura trímera, enquanto no milho, uma monocoti-
+ledônea, as ﬂ ores possuem estrutura tetrâmera.
+28.
+(PUC) — O gráﬁ co abaixo representa as taxas de fo-
+tossíntese e respiração de uma planta, em função da
+intensidade luminosa.
+taxa dos processos
+respiração
+fotossíntese
+intensidade luminosa
+I
+II
+III
+A partir da análise do gráﬁ co, pode-se aﬁ rmar que
+A) no intervalo I, a planta produz mais glicose e mais
+oxigênio que nos intervalos II e III.
+B) no intervalo I, a planta consome mais glicose e mais
+gás carbônico que nos intervalos II e III.
+C) no intervalo I, a planta produz mais gás carbônico e
+mais oxigênio que nos intervalos II e III.
+D) no intervalo II, a planta produz mais gás carbônico
+e mais oxigênio que nos intervalos I e III.
+E) nos intervalos II e III, a planta produz mais glicose e
+consome mais gás carbônico que no intervalo I.
+29. 
+(UFRJ) — No cultivo hidropônico de hortaliças, as plan-
+tas não são cultivadas diretamente no solo. Uma solu-
+ção contendo nutrientes circula entre as raízes. A tabe-
+la a seguir apresenta a composição recomendada de
+alguns nutrientes para o cultivo hidropônico da alface.
+Nutrientes
+Concentração mg/L
+K (Potássio)
+312
+Mg (Magnésio)
+48
+S (Enxofre)
+?????????
+Foram utilizados sulfato de potássio (K2SO4) e sulfato 
+de magnésio (MgSO4) para preparar uma solução nu-
+triente de acordo com as concentrações apresentadas 
+na tabela.
+A concentração em mg/L de enxofre nesta solução é 
+igual a:
+A) 32mg/L
+B) 64mg/L
+C) 128mg/L
+D) 192mg/L
+E) 224mg/L
+30.
+(FUVEST) — Alguns alimentos são enriquecidos pela
+adição de vitaminas, que podem ser solúveis em gor-
+dura ou em água. As vitaminas solúveis em gordura
+possuem uma estrutura molecular com poucos átomos
+de oxigênio, semelhante à de um hidrocarboneto de
+longa cadeia, predominando o caráter apolar. Já as vi-
+taminas solúveis em água têm estrutura com alta pro-
+porção de átomos eletronegativos, como o oxigênio e o
+nitrogênio, que promovem forte interação com a água.
+
+
+===== PAGE 10 =====
+
+– 10 –
+Com base nas informações são feitas as seguintes aﬁ r-
+mações: 
+I. A dissolução em água a 25ºC dos dois produtos da
+hidrólise da ureia, separadamente, origina uma so-
+lução de pH  7 e outra de pH  7.
+II. Sem a urease a reação não ocorreria.
+III. A urease, que é um biocatalisador, diminui a ener-
+gia de ativação da reação sem alterar o seu ΔH.
+IV. Sem o íon Ni2+ a urease poderia ter sua estrutura
+deformada.
+É(São) correta(s) a(s) aﬁ rmação(ões):
+A) todas.
+B) nenhuma.
+C) somente I e II.
+D) somente I, III e IV.
+E) somente II e III.
+34.
+O dióxido de dinitrogênio é um gás acastanhado, que
+pode ser produzido em laboratório pela reação entre o
+ácido nítrico e o cobre, segundo a equação:
+4HNO3(aq) + Cu(s) → Cu(NO3)2(aq) + 2NO2(g) + 2H2O(l)
+A respeito dessa reação, determine a massa do metal 
+cobre que reage completamente com 4,8 ⋅ 1023 molé-
+culas de HNO3(aq) e o número de moléculas de água 
+formadas.
+A) 127g e 1,2 ⋅ 1024 moléculas
+B) 63,5g e 1,2 ⋅ 1023 moléculas
+C) 6,35g e 2,4 ⋅ 1023 moléculas
+D) 12,7g e 2,4 ⋅ 1023 moléculas
+E) 63,5g e 24 ⋅ 1023 moléculas
+35.
+Dois móveis partem simultaneamente de um mesmo
+ponto e suas velocidades estão representadas no mes-
+mo gráﬁ co a seguir.
+4
+8
+12
+0
+15
+30
+A
+B
+t(s)
+v(m/s)
+A distância que os separa no instante que suas veloci-
+dades são iguais é:
+A) 2m
+B) 5m
+C) 15m
+D) 18m
+E) 20m
+32.
+A condutibilidade elétrica de um semicondutor pode
+ser aumentada utilizando-se o processo de dopagem,
+que consiste em adicionar pequenas quantidades de
+outros elementos.
+Para dopar o silício (Si), um átomo X deve formar qua-
+tro ligações covalentes com ele e deixar um único elé-
+tron livre, como ilustra a ﬁ gura de um condutor tipo
+(n) a seguir.
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+X
+X
+e–
+e
+Com base nas informações, pode-se aﬁ rmar que o áto-
+mo X, capaz de dopar o semicondutor de silício, é:
+A) Cl (Z = 17)
+B) Ca (Z = 20)
+C) P (Z = 15)
+D) Na (Z = 11)
+E) Ne (Z = 10)
+33.
+A urease é uma enzima que, em meio aquoso,
+catalisa a hidrólise da ureia em amônia e dióxido de
+carbono. Ela está presente nos grãos de soja, nas se-
+mentes de melão e melancia, entre outros.
+C  —
+—  O   +   H2O
+2NH3   +   CO2
+H2N
+H2N
+—
+—
+urease
+pH
+ureia
+amônia
+Para realizar sua ação, a urease requer um compo-
+nente não proteico denominado cofator: o íon metáli-
+co Ni2+. A presença de íons de níquel é essencial tanto 
+para a atividade funcional como para a integridade es-
+trutural dessa enzima.
+Além de ter sido a primeira enzima isolada na 
+forma cristalina, em 1926, a urease é uma substân-
+cia extensamente estudada, devido à aplicabilidade 
+na agricultura e na Medicina. Atualmente, a urease é 
+utilizada em procedimentos de diagnósticos clínicos, 
+na determinação de ureia em ﬂ uídos biológicos, como 
+urina e sangue. A hidrólise da ureia, empregando essa 
+enzima como biocatalisador, na temperatura de 20ºC, 
+é até 1014 vezes mais rápida que a hidrólise realizada 
+em meio ácido a uma temperatura de 60ºC.
+A urina humana é constituída de 2 a 5% em ureia. 
+Essa é a forma utilizada pelo metabolismo do orga-
+nismo para eliminar os resíduos nitrogenados indese-
+jáveis produzidos a partir das proteínas. Atualmente, 
+a ureia é utilizada como suplemento na alimentação 
+de animais, na agricultura (como fertilizante), na fa-
+bricação de plásticos, na indústria farmacêutica, entre 
+outros.
+(ALMEIDA, V. V. de, et alii. “Catalisando a hidrólise da
+ureia em urina”. In: Química Nova na Escola. Disponível em:
+<http://qnesc.sbq.org.br/online/qnesc28/10-EEQ-5506.pdf>
+Acesso em: mar. 2010.)
+
+
+===== PAGE 11 =====
+
+★CONCURSO DE BOLSAS
+– 11 –
+Rascunho:
+36.
+A ﬁ gura adiante esquematiza o arranjo utilizado em
+uma repetição da experiência de Joule. O calorímetro
+utilizado, com capacidade térmica de 1600J/ºC, conti-
+nha 200g de água, ambos a uma temperatura inicial
+de 22,00ºC. O corpo de massa M = 1,5kg, é abandona-
+do de uma altura de 8m. O procedimento foi repetido
+6 vezes até que a temperatura do conjunto água + ca-
+lorímetro atingisse 22,20ºC.
+8,0m
+Do total da energia mecânica liberada nas 6 quedas 
+do corpo, a fração utilizada para aquecer o conjunto 
+foi de:
+Adote: calor especíﬁ co da água = 4J/gºC.
+A) 2
+3
+D) 3
+4
+B) 1
+2
+E) 2
+5
+C) 1
+3
+37.
+O campo elétrico no interior de um capacitor de placas
+paralelas é uniforme, dado pela fórmula E = U
+D
+, onde U
+é a diferença de potencial entre as placas e D a distân-
+cia entre elas.
+A ﬁ gura adiante representa uma gota de óleo, de
+massa M e carga positiva Q, entre as placas hori-
+zontais do capacitor no vácuo. A gota encontra-se
+em equilíbrio sob ação das forças gravitacional e
+elétrica.
+D
+gota
+U
+–
++
+g
+A
+Uma relação possível entre U, D, M, Q e g (aceleração 
+da gravidade) é:
+A) Q ⋅ U2 = M ⋅ g
+D
+D) Q ⋅ U
+2
+ = M ⋅ g ⋅ D2
+B) Q ⋅ U = M ⋅ g ⋅ D
+E)
+Q ⋅ U
+M ⋅ g ⋅ D
+ = 2
+C) Q ⋅ U = M ⋅ g ⋅ D
+2
+
+
+===== PAGE 12 =====
+
+– 12 –
+Rascunho:
+38.
+Suponha que uma pessoa esteja em pé, encostada em
+uma parede, conforme ilustra a ﬁ gura seguinte:
+Considerando que a parede seja bastante lisa, que a 
+massa da pessoa seja de 80kg e que ela esteja pressio-
+nando a parede com uma força de intensidade 120N, 
+qual é a melhor representação gráﬁ ca para o conjunto 
+de forças que atuam sobre essa pessoa?
+A) 
+B) 
+C) 
+D) 
+E)
+
+
+===== PAGE 13 =====
+
+★CONCURSO DE BOLSAS
+– 13 –
+Rascunho:
+39.
+Um pequeno bloco de massa 3kg desliza sobre uma
+superfície inclinada de 30º com a horizontal, conforme
+indica a ﬁ gura seguinte.
+30º
+|a| = 3
+g
+Sabendo que o bloco desce em movimento retilíneo 
+com aceleração em módulo igual a g
+3
+ no sentido indi-
+cado pela ﬁ gura, em que g é a aceleração gravitacio-
+nal, qual é o módulo da força de atrito que age sobre 
+o bloco?
+A) 0N
+B) 3,0N
+C) 5,0N
+D) 7,0N
+E) 10N
+40.
+Um arquiteto encomenda a um serralheiro uma es-
+trutura metálica cuja forma é a de um quadrado re-
+forçado diagonalmente, conforme ilustra o esquema
+seguinte:
+A
+D
+B
+C
+L0
+L0
+Para a confecção desta estrutura, foram utilizadas 5 
+barras metálicas de mesma seção transversal e de 
+mesmo material (coeﬁ ciente de dilatação α) e solda-
+das nos pontos A, B, C e D. 
+Considere ainda que, na situação esquematizada, to-
+das as barras estejam relaxadas, não estando subme-
+tidas a esforços de compressão ou tração.
+Caso essa estrutura seja submetida a um aquecimento 
+uniforme Δθ, podemos dizer que:
+A) A estrutura continuará com a forma de quadrado,
+com a barra diagonal tracionada.
+B) A estrutura continuará com a forma de quadrado e
+a barra diagonal continuará relaxada.
+C) A estrutura tomará a forma de um losango, sendo
+que os pontos A e C se aproximarão.
+D) A estrutura tomará a forma de um losango, sendo
+que os pontos A e C se afastarão.
+E) A estrutura continuará com a forma de quadrado,
+com a barra diagonal comprimida.
+
+
+===== PAGE 14 =====
+
+– 14 –
+Rascunho:
+41.
+Fatorando a2c – b2c obtém-se:
+A) c(a – b)(a – b)
+B) c(a + b)(a – b)
+C) c(a + b)(a + b)
+D) c(a – b)2
+E) (ac + bc)(ac – bc)
+42.
+Sendo f uma função real de variável real, tal que
+f(x) + x ⋅ f(4 – x) = x2 + 8,
+para todo x real, pode-se concluir que f(4) é igual a:
+A) –8
+B) –4
+C) 0
+D) 4
+E) 8
+43.
+Sendo i a unidade imaginária, a = 2 + i e b = 1 – i, então
+a
+b
+ é igual a:
+A) 1 + 3i
+B) 1 – 3i
+C) 2 – i
+D) 1 – 3i
+2
+E) 1 + 3i
+2
+44.
+A solução real da equação log2x + log2(x – 1) = log212
+pertence ao intervalo:
+A) ]1, 3[
+B) ]3, 5[
+C) ]5, 7[
+D) ]7, 9[
+E) ]9, 11[
+45.
+A matriz 
+a
+b
+c
+ é a solução da equação matricial AX = M
+em que: A = 
+1
+0
+0  
+2
+1
+0  
+5
+4
+3
+ e M = 
+28
+15
+9
+. 
+Então a2 + b2 + c2 vale:
+A) 67
+B) 68
+C) 69
+D) 70
+E) 71
+46.
+Uma empresa de turismo opera com 3 funcionários.
+Para que haja atendimento em cada dia, é necessá-
+rio que pelo menos um funcionário esteja presente.
+A probabilidade de cada funcionário faltar num dia é
+5%, e o evento falta de cada um dos funcionários é
+independente da falta de cada um dos demais.
+Em determinado dia, a probabilidade de haver aten-
+dimento é:
+A) 0,857375
+B) 0,925750
+C) 0,999875
+D) 0,90
+E) 0,95
+
+
+===== PAGE 15 =====
+
+★CONCURSO DE BOLSAS
+– 15 –
+49.
+Uma circunferência tem centro no eixo das abscissas
+e passa pelos pontos A(0, 3) e B(8, 3). A equação dessa
+circunferência é:
+A) (x – 4)2 + y2 = 5
+B) (x – 4)2 + y2 = 25
+C) (x + 4)2 + y2 = 5
+D) (x + 4)2 + y2 = 5
+E) (x – 4)2 + (y – 4)2 = 25
+50.
+A ﬁ gura ilustra um cubo de aresta 4cm.
+H
+G
+F
+C
+B
+A
+E
+D
+A distância do centro da face EFGH até um dos vérti-
+ces da face ABCD, em cm, é:
+A) 4
+B) 42
+C) 23
+D) 25
+E) 26
+47.
+Um hospital dispõe de três médicos e de quatro en-
+fermeiras para formar uma Comissão de Ética (CE) e
+uma Comissão de Controle de Infecções Hospitalares
+(CCIH). Cada comissão deve ser composta de um mé-
+dico e duas enfermeiras e ninguém pode pertencer às
+duas comissões. Juntas, uma CE e uma CCIH consti-
+tuem uma “formação”. O número de “formações” dis-
+tintas que podem ser constituídas é:
+A) 324
+B) 144
+C) 36
+D) 18
+E) 6
+48.
+Na ﬁ gura, os pontos D e E pertencem aos lados —
+AB
+— e 
+—
+AC
+— do triângulo ABC.
+A
+D
+B
+C
+E
+Se a área do triângulo ABC é 10cm2, AB = 10cm,
+AC = 8cm, AD = 4cm e AE = 6cm, a área do triângulo 
+ADE, em cm2, é:
+A) 3
+B) 3
+C) 4
+D) 43
+E) 6
+
+

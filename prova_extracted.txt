@@ -1,0 +1,715 @@
+===== PAGE 1 =====
+
+ 
+ 
+ 
+Confira abaixo a prova e gabarito do Concurso de Bolsas do Ensino Médio de 
+anos anteriores 
+ 
+01) Nos metais, as partículas responsáveis pela condução da corrente elétrica são: 
+ 
+a) prótons. 
+b) elétrons. 
+c) cátions. 
+d) ânions. 
+e) núcleos. 
+ 
+02) A fórmula molecular de uma substância é CaCO 3. Sabendo que as massas atômicas são: Ca = 40 ; C = 12  e O = 16, pode-se 
+afirmar que a porcentagem em massa de oxigênio no CaCO3 vale: 
+ 
+a) 40%       b) 12%        c) 3%       d) 48%        e) 24% 
+ 
+03) O petróleo extraído carrega consigo água salgada, que deve ser retirada antes de ele ser encaminhado a 
+uma refinaria. O diagrama abaixo apresenta um esquema simplificado de tratamento do petróleo. 
+ 
+ 
+ 
+Podemos concluir que as etapas A e B apresentadas no diagrama referem-se respectivamente à: 
+ 
+a) Decantação e destilação fracionada. 
+b) Filtração de destilação fracionada. 
+c) Decantação e destilação simples. 
+d) Dissolução e destilação fracionada. 
+e) Decantação e filtração. 
+ 
+04) Considere os elementos K, Ca, As e Br, todos localizados no quarto período da Classificação Periódica. 
+ 
+
+
+===== PAGE 2 =====
+
+ 
+ 
+ 
+Os elementos com tendência a ser cáti on e apresentarem na camada de valência 1 elétrons e 2 elétrons, 
+respectivamente são: 
+ 
+a) K e Ca. 
+b) Ca e Br. 
+c) K e Br. 
+d) Ca e As. 
+e) Ca e K. 
+ 
+05) Considere uma malha quadriculada cujas células são quadrados de lado 1. Segundo o teorema de Pick, 
+a área de um polígono simples cujos vértices são nós dessa malha, é igual ao número de nós da malha que 
+se encontram no interior do polígono mais metade do número de nós que se encontram sobre o perímetro do 
+polígono, menos uma unidade.  
+ 
+ 
+ 
+De acordo com esse teorema, a área do polígono representado na figura acima é igual a:  
+ 
+a) 21    
+b) 18     
+c) 23     
+
+
+===== PAGE 3 =====
+
+ 
+d) 19     
+e) 22     
+ 
+06) Na figura abaixo, ABCD  é um retângulo e ADE  é um quadrante de círculo de centro D. Se o lado AB  e 
+o arco AE  têm comprimentos iguais a cm,Ɏ  a medida da área sombreada, em 2cm ,  é: 
+  
+ 
+a) 4     
+b) Ɏ    
+c) 2Ɏ    
+d) 2
+Ɏ    
+e) 2     
+  
+07) A figura abaixo representa um rio plano com margen s retilíneas e paralelas. Um topógrafo situado no 
+ponto A de uma das margens almeja descobrir a largur a desse rio. Ele avista dois pontos fixos B e C na 
+margem oposta. Os pontos B e C são visados a partir de A, segundo ângulos de 60° e 30°, respectivamente, 
+medidos no sentido anti-horário a partir da margem em que se encontra o ponto A.  
+ 
+Sabendo que a distância de B até C mede 10 0 m, qual é a largura do rio? 
+  
+ 
+a) 50 3 m     
+b) 75 3 m     
+c) 10 0 3 m    
+d) 150 3 m     
+e) 200 3 m     
+ 
+
+===== PAGE 4 =====
+
+ 
+08) Uma pessoa cujos olhos estão a 1,80 m de altura em relação ao chão avista o topo de um edifício segundo 
+um ângulo de 30° com a horizontal. Percorrendo 80 m no sentido de aproximação do edifício, esse ângulo 
+passa a medir 60°. Usando o valor 1,73 para a raiz quadrada de 3, podemos concluir que a altura desse 
+edifício é de aproximadamente:  
+ 
+a) 59 m    
+b) 62 m    
+c) 65 m    
+d) 69 m    
+e) 71 m    
+ 
+09) As medidas dos ângulos de um triângulo são, respectivamente, x,  8x  e 9x.  Diante do exposto, assinale 
+a alternativa que apresenta o valor de x.  
+ 
+a) 7.     
+b) 8,5.     
+c) 10.     
+d) 11 ,8.    
+e) 12.     
+ 
+10) Considere as seguintes expressões: 
+É (são) verdadeira(s), somente: 
+ 
+a) I. 
+b) II. 
+c) III. 
+d) I e II. 
+e) I e III. 
+ 
+11) Qual o dobro de 2
+38? 
+ 
+a) 438 
+
+
+===== PAGE 5 =====
+
+ 
+b) 476 
+c) 276 
+d) 239 
+e) 240 
+12) Vamos ainda considerar o minerador mencionado na outra questão desta prova de física. O grama do 
+ouro está atualmente no valor aproximado de 312 reais. O minerador tem um acordo de oferecer aos donos 
+da terra onde ele trabalha 25% de seu ganho, outros 20% ficam com quem comercializa o ouro, e outros 15% 
+são para cobrir os gastos com a manutenção da mina. 
+Qual foi o ganho final, em reais, do minerador com sua pepita de 15 gramas? 
+ 
+a) 1872 
+b) 125 
+c) 15000 
+d) 8500 
+e) 632 
+ 
+13) Certa espécie de árvore cresce segundo a fórmula H(t) = 8 + 2ڄlog
+2 (15t + 4) sendo H em metros e t em 
+anos. Nestas condições, a altura que a árvore atinge com t = 4 anos de idade é: 
+ 
+a) 16 m 
+b) 20 m 
+c) 24 m 
+d) 12 m 
+e) 13 m 
+ 
+14) Dada a progressão geométrica (4; 8; 16; ...), então o logaritmo na  base 2 do sexto termo desta sequência, 
+isto é, log
+2(a6)  é igual a: 
+ 
+a) 129 
+b) 7 
+c) 9 
+d) 1024 
+e) 6 
+ 
+15) Vários processos físicos envolvem transformações entre fo rmas diferentes de energia. Associe as duas colunas, e 
+assinale a alternativa que indica corretamente as associações entre elas: 
+
+===== PAGE 6 =====
+
+ 
+ 
+a) 1-D, 2-E, 3-B, 4-A, 5-C 
+b) 1-D 2-A, 3-B, 4-E, 5-C 
+c) 1-B, 2-E, 3-D, 4-A, 5-C 
+d) 1-D, 2-B, 3C, 4-A, 5-E 
+e) 1-B, 2-A, 3-D, 4-E, 5-C 
+ 
+16) Um ônibus passa pelo 30km de uma rodovia às 6h, e às 9h passa pelo 240km. Qual a velocidade média 
+desenvolvida pelo ônibus nesse intervalo de tempo? 
+ 
+a) 90 km/h 
+b) 210 km/h 
+c) 70 m/s 
+d) 70 km/h 
+e) 90 m/s 
+ 
+17) 
+ 
+ 
+No dispositivo indicado acima, cujo espelho é côncavo, 
+a imagem correspondente é: 
+ 
+a) real, direita e maior que o objeto. 
+b) real, invertida e maior que o objeto. 
+c) real, invertida e de mesmo tamanho do objeto. 
+d) real, invertida e menor que o objeto. 
+e) real, direita e menor que o objeto. 
+ 
+18) Analise as afirmações referentes à condução térmica. 
+I. Para que um pedaço de carne cozinhe mais rapidamente, pode-se introduzir nele um espeto metálico. Isso 
+se justifica pelo fato de o metal ser um bom condutor de calor.  
+Dispositivo 
+mecânico 
+ 
+ou gerador:                 
+1.Pilha de rádio 
+2. Gerador de usina     
+hidrelétrica 
+3. Chuveiro elét
+rico 
+4. Alto-falante  
+5. Máquina a vapor 
+ 
+ Transformação  
+ de tipo de energia: 
+ A. Elétrica em 
+Mecânica 
+ B. Elétrica em Térmica 
+ C. Térmica em 
+Mecânica 
+ D. Química em Elétrica 
+ E. Mecânica em 
+Elétrica 
+ 
+
+===== PAGE 7 =====
+
+ 
+II. Os agasalhos de lã dificultam a perda de energia (na forma de calor)  do corpo humano para o ambiente, 
+devido ao fato de o ar aprisionado entre suas fibras ser um bom isolante térmico.  
+III. Devido à condução térmica, uma barra de metal mantém-se a uma temperatura inferior à de uma barra de 
+madeira colocada no mesmo ambiente.  
+Podemos afirmar que: 
+ 
+a) II e III estão corretas. 
+b) l, II e III estão erradas. 
+c) Apenas I está correta. 
+d) Apenas I e II estão corretas. 
+e) Todas as afirmativas estão corretas. 
+ 
+19) Considere as seguintes situações: 
+ 
+I - Uma célula da raiz de um vegetal absorvendo água do solo. 
+II - Englobamento de uma bactéria por uma célula de defesa de um mamífero. 
+III - Entrada de O
+2 nas hemácias do sangue. 
+ 
+Assinale a alternativa que apresenta o tipo de transporte indicado por I, II e III, respectivamente. 
+ 
+a) Difusão, osmose e fagocitose. 
+b) Osmose, fagocitose e difusão. 
+c) Fagocitose, osmose e difusão 
+d) Osmose, difusão e fagocitose. 
+e) Fagocitose, difusão e osmose. 
+ 
+20) Observe as figuras a seguir, que representam diferentes processos da divisão celular. 
+ 
+
+===== PAGE 8 =====
+
+ 
+ 
+Assinale a alternativa que indica a(s) figura(s) que ocorre(m) apenas na mitose. 
+ 
+a) A e B. 
+b) A e C. 
+c) B e C. 
+d) Apenas B. 
+e) Apenas C. 
+ 
+21) A reprodução é a capacidade de um ser vivo de produzir descendentes e como consequência propagar a 
+sua espécie. Por muito tempo, acreditou-se que microrganismos eram incapazes de se reproduzir, entretanto, 
+hoje se sabe que até mesmo bactérias apresentam reprodução. Nesses organismos, geralmente, observa-se 
+a divisão de uma célula em duas, em um tipo de reprodução  
+conhecido como: 
+ 
+a) reprodução assexuada. 
+b) partenogênese. 
+c) conjugação. 
+d) reprodução sexuada. 
+e) enxertia. 
+ 
+22) Considere o texto a seguir. 
+ 
+“Os elementos químicos, inclusive todos os elementos essenciais ao citoplasma celular, tendem a circular na 
+biosfera em vias características: do ambiente aos organismos e, destes, novamente ao ambiente”. 
+ 
+De acordo com os conhecimentos sobre os ciclos biogeoquímicos, pode-se afirmar que: 
+
+
+===== PAGE 9 =====
+
+ 
+ 
+a) no ciclo do carbono, a fotossíntese é o processo que devolve o elemento carbono para a natureza na forma 
+de gás carbônico. 
+b) no ciclo do carbono, a respiração aeróbia é o processo que incorpora o elemento carbono, nos seres vivos, 
+na forma de glicose. 
+c) no ciclo do nitrogênio, as bactérias nitrificantes convertem o ni trogênio gasoso em gás oxigênio, que é 
+absorvido pelas plantas. 
+d)  no ciclo do nitrogênio, protozoários fixadores associados a raízes de plantas leguminosas devolvem 
+nitrogênio gasoso para a atmosfera. 
+e) em seu ciclo, a água é absorvida pelas raízes dos vegetais, os quais utilizam-na para a fotossíntese e a 
+devolvem por meio da transpiração. 
+ 
+23) Observe a imagem abaixo e assinale a alternativa que melhor a interpreta: 
+ 
+ 
+ 
+a) a imagem representa a democrática convivência entre as diferentes classes sociais e os diferentes elementos étnicos 
+da sociedade colonial brasileira. 
+b) a imagem representa o matriarcalismo da sociedade brasil eira colonial, pois naquele momento histórico as mulheres 
+eram as líderes tanto no seio familiar quanto na política e nas estruturas de poder econômico. 
+c) a imagem representa o poder que os  escravos tinham naquele momento hist órico, visto que eles são o elemento 
+dominante no ambiente doméstico. 
+d) a imagem representa a sociedade brasileira colonial e sua desigualdade mais evidente, a diferença entre proprietários 
+e escravizados. 
+e) a imagem representa o momento republicano no pós abol ição, visto que mesmo depois de finalizada a escravidão, 
+era normal a utilização de escravos no ambiente doméstico em todas as classes dominantes. 
+ 
+24) Observe a imagem abaixo e assinale a alternativa que melhor a interpreta: 
+ 
+ 
+
+
+===== PAGE 10 =====
+
+ 
+ 
+a) a imagem representa o sistema liberal de governo, com o exercício do poder real limitado pelo parlamento e pela 
+constituição. 
+b) a imagem representa o sistema escravocrata, já que fica implícito que o rei sempre terá  escravizados para os seus 
+serviços pessoais. 
+c) a imagem representa o poder absolutista, no qual o rei detém todos os poderes políticos. 
+d) a imagem representa a revolução francesa e o fim dos privilégios reais e da nobreza. 
+e) a imagem representa o poder da nobreza durante a Idade Média, que  
+disputava com o poder real a liderança política do Estado Nação. 
+ 
+25) Leia o texto abaixo e assinale a alternativa que melhor o interpreta: 
+A democracia atual é exercida de forma diversa daquela adotada na antiguidade grega, porque os valores sociais 
+mudaram, em que pese a sua essência permanecer na noção de um governo de muitos ou da maioria. Mas, além disso, 
+a democracia atual se utiliza de modelos representativos e da organização em partidos políticos com eleições periódicas, 
+como uma forma de promover a alternância no exercício do poder e conter abusos, preocupação que se fazia presente 
+também na democracia ateniense .-Allan Carlos Moreira Magalhães, doutor em  Direito, professor e pesquisador 
+com estudos no campo dos Direitos Culturais. Autor do livro Patrimônio Cultural, Democracia e Federalismo . 
+Articulista do Instituto Brasileiro de Direitos Culturais (IBDCult)
+ 
+ 
+a) a democracia ateniense antiga não tem para com a demo cracia moderna nenhuma conexão, visto que em Atenas 
+havia a presença da escravidão, hoje incompatível com o sistema democrático. 
+b) apesar de conviver com a exclusão  de elementos da sociedade ateniense da época, como mulheres e escravos, o 
+princípio democrático ateniense de escolha do governante pela maioria ainda é válidos para os dias de hoje. 
+c) na Grécia Antiga, os partidos políticos lançavam candidatos aos governos e se organizaram em coalizões partidárias 
+e ideológicas como nos dias de hoje. 
+d) A melhor prática democrática da Grécia Antiga não se deu em Atenas mas em Esparta, cidade na qual a participação 
+política era ampla e sem limitações. 
+e) Em Atenas era pequena a participação feminina na polí tica, porém em alguns momentos as mulheres conseguiram 
+exercer cargos políticos e governar a cidade. 
+ 
+26) "A Independência do Brasil se consolidou no imaginário nacional como o nosso mito fundador enquanto nação, e 
+como um grito que teria sido dado às margens do Ipiranga, lugar onde em 1895 a recém-declarada República construiu 
+o Museu do Ipiranga para homenagear a emancipação política brasileira", Lucia Santa-Cruz, professora e coordenadora 
+do Laboratório de Estudos da Memória Brasileira e Representação (Lembrar) da ESPM Rio. 
+ 
+A partir do texto e dos seus conhecimentos sobre o momento histórico nele citado, assinale a alternativa correta: 
+ 
+a) A independência do Brasil em 1822 marcou também o fim da escravidão e a possibilidade de maior participação da 
+população mais pobre na escolha dos governantes. 
+b) o fato do Brasil ter sido emancipado como um Império foi um dos fatores que diminuíram as tendências à fragmentação 
+política do território nacional, ou seja, manteve o país unificado
+. 
+c) foi apenas na República que houve a consolidação da unidade territorial brasileira, visto que houve no Império vários 
+momentos de revolta nos quais esse unidade era sempre questionada. 
+d) Dom Pedro I teve um papel muito limitado no processo de independência, visto que este processo foi todo negociado 
+entre a Inglaterra e Portugal. 
+e) Não há conexão direta entre a invasão napoleônica de Portugal, a vinda da família real para o Brasil e a independência 
+brasileira. 
+ 
+27) “Portadora de memória, a paisagem ajuda a construi r os sentimentos de pertencimento; ela cria uma 
+atmosfera que convém aos momentos fortes da vida, às festas, às comemorações.” 
+CLAVAL, P. Terra dos homens: a geografia. 
+São Paulo: Contexto, 2010 (adaptado). 
+No texto é apresentada uma forma de integração da paisagem geográfica com a vida social. Nesse sentido, 
+a paisagem, além de existir como forma concreta, apresenta uma dimensão 
+ 
+a) política de apropriação efetiva do espaço. 
+b) econômica de uso de recursos do espaço. 
+c) privada de limitação sobre a utilização do espaço. 
+
+===== PAGE 11 =====
+
+ 
+d) natural de composição por elementos físicos do espaço. 
+e) simbólica de relação subjetiva do indivíduo com o espaço 
+ 
+28)  
+As figuras representam a distância re al (D) entre duas resi dências e a distância pr oporcional (d) em uma 
+representação cartográfica, as quais permitem estabelecer relações espaciais entre o mapa e o terreno. Para 
+a ilustração apresentada, a escala numérica correta é? 
+ 
+a) 1/50 
+b) 1/5 000 
+c) 1/50 000 
+d) 1/80 000 
+e) 1/80 000 000 
+ 
+29)  
+ 
+
+
+===== PAGE 12 =====
+
+ 
+A imagem ilustra o trajeto mais comum dos pilotos de asa-delta entre o Vale do Paranã e a Esplanada dos 
+Ministérios em Brasília, distantes cerca de 90 quilômetros. Constituem fatores que permitem a longa duração 
+deste voo:  
+ 
+a) o ângulo de incidência do sol (a intensidade de energia solar que atinge a Terra) e a frente oclusa (a ação 
+do movimento da corrente de ar frio levantando o ar quente até que ele perca seu contato com a superfície).  
+b) a gravidade (a força de atração entre dois corpos) e a expansão adiabática (a expansão de grandes bolhas 
+de ar até encontrarem menores valores de pressão atmosférica).  
+c) a brisa terrestre (a formação de um campo de alta pressão junto à superfície) e os ventos divergentes em 
+altitude (a conformação de uma área receptora de ventos ascendentes).  
+d) o atrito (a força gerada no sentido contrário ao deslocamento do vento) e o efeito de Coriolis (a rotação das 
+massas de ar no sentido horizontal em função do movimento da própria Terra).  
+e) o processo de condução (a transferência de calor da superfície para a camada mais próxima da atmosfera) 
+e o processo de convecção (a dinâmica cíclica entre o ar quente que sobe e o ar frio que desce). 
+ 
+30) O BRICS – Brasil, Rússia, Índia, China e África do Sul – vem negociando cuidadosamente 
+o estabelecimento de mecanismos independentes de  financiamento e estabilização, como o Arranjo 
+Contingente de Reservas (Con tingent Reserve Arrangement – CRA) e o Novo Banco de Desenvolvimento 
+(New Development Bank – NDB). O primeiro será um fundo de estabilização entre os cinco países; o segundo, 
+um banco para financiamento de projet os de investimento no BRICS e outros  países em desenvolvimento.    
+Disponível em: www.cartamaior.com.br (adaptado). 
+O Arranjo Contingente de Reservas e o Novo Banco de Desenvolvimento procuram suprir a escassez de 
+recursos nas economias emergentes. Tais iniciativas constituem uma alternativa 
+ 
+a) às instituições de crédito privadas, encerrando a sujeição econômica dos países emergentes 
+e evitando a assinatura de termos regulatórios coercitivos sobre as práticas de produção. 
+b) aos bancos centrais dos países do BRICS, re duzindo os problemas econômicos de curto prazo e 
+maximizando o poder de negociação do grupo. 
+c) às instituições criadas na Conferência de Bretto n Woods, definindo novos mecanismos de autodefesa e 
+estimulando o crescimento econômico. 
+d) ao norte-americano Plano Marshall, elegendo com autonomia o destino da ajuda econômica e os 
+investimentos públicos em áreas estratégicas. 
+e) à hegemonia do Banco Mundial, deslocando o centro do sistema capitalista e os fluxos de informação para 
+os países em desenvolvimento.  
+ 
+31) Leia com atenção o seguinte texto. 
+ 
+O labirinto dos manuais 
+ 
+Há alguns meses troquei meu celular. Um modelo lindo, pequ eno, prático. Segundo a vendedora, era capaz de tudo e 
+mais um pouco. Fotografava, fazia vídeos, recebia e-mails e até servia para telefonar. Abri o manual, entusiasmado. 
+“Agora eu aprendo”, decidi, folheando as 49 páginas. Já na primeira, tentei executar as funções. Duas horas depois, eu 
+estava prestes a roer o aparelho. O manual tentava prever todas as possibilidades. Virou um labirinto de instruções! 
+Na semana seguinte, tentei baixar o som da campainha. Só aumentava. Buscava o vibracall, não achava. Era só alguém 
+me chamar e todo mundo em torno saía correndo, pensando  que era o alarme de incêndio! Quem me salvou foi um 
+motorista de táxi. 
+
+===== PAGE 13 =====
+
+ 
+— Manual só confunde – disse didaticamente. – Dá uma de curioso. 
+Insisti e finalmente descobri que estava no vibracall há meses! O único problema é que agora não consigo botar a 
+campainha de volta! 
+Atualmente, estou de computador novo. Fiz o que toda pessoa minuciosa faria. Comprei um livro. Na capa, a promessa: 
+“Rápido e fácil” –  um guia prático, simples e colorido! Resolvi: “Vou seguir cada instrução, página por página. Do que 
+adianta ter um supercomputador se não sei usá- lo?”. Quando cheguei à página 20, minha cabeça latejava. O livro tem 
+342! Cada vez que olho, dá vontade de chorar! Não seria melhor gastar o tempo relendo Guerra e Paz*? 
+Tudo foi criado para simplificar. Mas até o microondas ficou difícil. A não ser que eu queira fazer pipoca, que possui sua 
+tecla própria. Mas não posso me alimentar só de pipoca! Ainda se emagrecesse... E o fax com secretária eletrônica? O 
+anterior era simples. Eu apertava um botão e apagava as mensagens. O atual exige que eu toque em um, depois em 
+outro para confirmar, e de novo no primeiro! Outro dia, a luzinha estava piscando. Tentei ouvir a mensagem. A secretária 
+disparou todas as mensagens, desde o início do ano! 
+Eu sei que para a garotada que está aí tudo parece muito simples. Mas o mundo é para todos, não é? Talvez alguém dê 
+aulas para entender manuais! Ou o jeito seria aprender só aquilo de que tenho realmente necessidade, e não usar todas 
+as funções. É o que a maioria das pessoas acaba fazendo! 
+(Walcyr Carrasco, Veja SP, 19.09.2007. Adaptado) 
+* Livro do escritor russo Liev Tolstói. Com mais de mil páginas e centenas de personagens, é considerada uma das 
+maiores obras da história da literatura. 
+Pelos comentários feitos pelo narrador, pode-se concluir corretamente que: 
+ 
+a) a leitura de obras-primas da literatura é atividade mais produtiva do que utilizar celulares e computadores. 
+b) os manuais cujas diversas instruções os usuários não conseguem compreender e pôr em prática são improdutivos. 
+c) a vendedora foi convincente, pois o narrador comprou o celular, embora duvidasse das qualidades prometidas pelo 
+aparelho. 
+d) o manual sobre computadores, ao contrário de outros do gênero, cumpria a promessa assumida nos dizeres impressos 
+na capa. 
+e) os jovens deveriam ensinar computação aos mais velhos , pois, dessa forma, estes últimos entenderiam as funções 
+básicas do equipamento.  
+ 
+32) 
+  
+ 
+ 
+ 
+Os textos publicitários são produzidos para cumprir determinadas funções comunicativas. Os objetivos desse cartaz 
+estão voltados para a conscientização dos brasileiros sobre a necessidade de 
+ 
+a) as crianças frequentarem a escola regularmente. 
+b) a alfabetização acontecer na idade certa. 
+c) a    literatura   ter   o   seu   mercado    consumidor ampliado. 
+d) as  escolas  desenvolverem campanhas a favor da leitura. 
+e) a formação leitora começar na infância. 
+ 
+
+
+===== PAGE 14 =====
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33)                     TEXTO I 
+ 
+ 
+Disponível em: http://revistaiiqb.usac.edu.gt. Acesso em: 25 abr. 2018 (adaptado). 
+ 
+TEXTO II 
+       Imaginemos um cidadão, residente na periferia de um grande centro urbano, que diariamente acorda às 
+5h para trabalhar, enfrenta em médi a 2 horas de transporte público, em geral lotado, para chegar às 8h ao 
+trabalho. Termina o expediente às 17h e chega em casa às 19h para, aí sim, cuidar dos afazeres domésticos, 
+dos filhos etc. Como dizer a essa pessoa que ela deve praticar exercícios, pois é importante para sua saúde? 
+Como ela irá entender a mensagem da importância do  exercício físico? A probabilidade de essa pessoa 
+praticar exercícios regularmente é significativamente menor que a de pessoas da classe média/alta que vivem 
+outra realidade. Nesse caso, a abordagem individual do problema tende a fazer com que a pessoa se sinta 
+impotente em não conseguir praticar exercícios e, co nsequentemente, culpada pelo  fato de ser ou estar 
+sedentária. FERREIRA, M. S. Aptidão física e saúde na educação física escolar: ampliando o enfoque. RBCE, n. 2,jan. 2001 (adaptado). 
+ 
+O segundo texto, que propõe uma reflexão sobre o primeiro acerca do impacto de mudanças no estilo de 
+vida na saúde, apresenta uma visão 
+ 
+a) medicalizada, que relaciona a prática de exercícios físicos por qualquer indivíduo à promoção da saúde. 
+b) ampliada, que considera aspectos sociais intervenientes na prática de exercícios no cotidiano. 
+c) crítica, que associa a interferência das tarefas da casa ao sedentarismo do indivíduo. 
+d) focalizada, que atribui ao indivíduo a responsabilidade pela prevenção de doenças. 
+e) geracional, que preconiza a representação do culto à jovialidade. 
+  
+34) CAPÍTULO LXXI 
+ 
+
+
+===== PAGE 15 =====
+
+ 
+O senão do livro 
+ 
+Começo o arrepender-me deste livro. Não que ele me cans e; eu não tenho que fazer; e, realmente, expedir 
+alguns magros capítulos para esse mundo sempre é tarefa que distrai um pouco da eternidade. Mas o livro é 
+enfadonho, cheira a sepulcro, traz certa contração cadavérica; vício grave, e aliás ínfimo, porque o maior 
+defeito deste livro és tu, leitor. Tu tens pressa de envelhecer, e o livro anda devagar; tu amas a narração 
+direita e nutrida, o estilo regular e fluente, e este livro e o meu estilo são como os ébrios, guinam à direita e à 
+esquerda, andam e param, resmungam, urram, gargalham, ameaçam o céu, escorregam e caem... 
+E caem! – Folhas misérrimas do meu cipreste, heis de cair, como quaisquer outras belas e vistosas; e, se eu 
+tivesse olhos, dar-vos-ia uma lágrim a de saudade. Esta é a grande vant agem da morte, que, se não deixa 
+boca para rir, também não deixa olhos para chorar... Heis de cair. 
+Machado de Assis, Memórias Póstumas de Brás Cubas. 
+No contexto, a locução “Heis de cair”, na última linha do texto, exprime: 
+ 
+a) resignação ante um fato presente. 
+b) suposição de que um fato pode vir a ocorrer. 
+c) certeza de que uma dada ação irá se realizar. 
+d) ação intermitente e duradoura. 
+e) desejo de que algo venha a acontecer. 
+ 
+35) Leia a tirinha e resolva à questão: 
+ 
+ 
+ 
+O discurso: “Filho, você é o meu sol!” é um exemplo de figura de palavra, já que consiste na mudança do sentido literal 
+de “sol”. Como essa figura de linguagem é classificada? 
+ 
+a) Hipérbole. 
+b) Eufemismo. 
+c) Metáfora. 
+d) Comparação. 
+e) Sinestesia 
+ 
+36) TEXTO PARA AS PRÓXIMAS 2 QUESTÕES:  
+ 
+Chegada do Perseverance abre caminho para retorno de amostras de Marte 
+ 
+
+
+===== PAGE 16 =====
+
+ 
+ Agora que o rover Perseverance está seguro e saudável na superfície de Marte, vários grupos de 
+trabalho espalhados pelo mundo podem respirar aliv iados e pensar nos passos futuros do programa de 
+exploração marciana -que vai agora focar seus esforços no cobiçado retorno de amostras de volta à Terra. A 
+missão atual é um primeiro passo crucial. Afinal, cabe ao Percy, como foi apelidado o jipe, fazer o escrutínio 
+e a escolha das rochas (comandado por cientistas na Terra , claro) que serão acon dicionadas por ele em 
+pequenos tubos lacrados e ultrarresistentes e depois deixadas, juntas, em algum canto da superfície de Marte. 
+Ele terá vários anos para fazer isso durante a exploração da cratera Jezero, um dos locais mais promissores 
+para a busca de evidências de vida pregressa marciana. 
+ Mas e aí, o que vem depois? Nasa e ESA, respecti vamente agências espaciais americana e europeia, 
+já trabalham conjuntamente nos próximos passos, que envolvem pelo menos mais dois, e possivelmente três, 
+lançamentos diferentes afim de trazer de volta o cobiçado material. Ainda faltam definições, mas trabalhos 20 
+preliminares sugerem a seguinte sequência. 
+ Em 2026, parte um módulo de pouso com um pequen o foguete, de menos de três metros, instalado a 
+bordo. Projetada e construída pela Nasa, a nave pousaria próximo ao local onde desceu o Perseverance. E 
+aí, talvez partindo do próprio módulo, talvez enviado num lançamento à parte, 1um pequeno rover produzido 
+pela ESA encontraria as amostras e as instalaria no interior do foguete. 2Em paralelo, em 2026 ou 2027, um 
+orbitador com propulsão elétrica, outra contribuição da ESA, partiria da Terra e se instalaria em órbita ao redor 
+de Marte. Em meados de 2029, 3o foguete seria disparado (o primeiro lançamento feito de outro planeta!), 
+colocando a cápsula com as amostras em órbita marciana. Lá ela se acoplaria ao orbitador europeu, que por 
+sua vez traria o conteúdo de volta à Terra, em 2031. 4A empreitada toda custaria cerca de US$ 5 bilhões, sem 
+contar os US$ 2,7 bilhões empenhados na missão do Perseverance. 5A recompensa, contudo, teria valor 
+incomensurável. 6Cientistas já tiveram a chance de analisar algumas amostras de Marte - meteoritos 
+provenientes do planeta vermelho -, mas nunca com a chance de escolher quais rochas, conhecendo o 
+contexto geológico de onde elas partiram. E 7amostras trazidas de volta continuam a render novos resultados 
+por décadas, conforme equipamentos mais sofisticados  surgem para estudá-las. Não à toa, as amostras 
+trazidas pelo programa Apollo, que levou humanos à Lua entre 1969 e 1972, continuam sendo estudadas até 
+hoje. Ademais, é fundamental demonstrar a capacidade de trazer uma pequena carga de Marte antes que se 
+ambicione trazer uma grande carga - como humanos - em uma futura missão tripulada. 
+ 
+Nogueira, S. "Chegada do Perse verance abre caminho para retorno de amostras de Marte". Folha de São 
+Paulo. 21.2.2021, Disponível em: https://bit.Iv/3bZL69q/.Adaptado 
+  
+1. No fragmento "... a nave pousaria próximo ao local onde desceu o Perseverance", "próximo" e "onde" são, 
+respectivamente, classificados como:  
+ 
+a) substantivo e pronome relativo.    
+b) adjetivo e pronome relativo.    
+c) advérbio e pronome relativo.    
+d) adjetivo e advérbio.    
+e) advérbio e advérbio.    
+  
+37) No fragmento "Ainda faltam definições, mas trabalho s preliminares sugerem a seguinte sequência.", as 
+duas palavras que apresentam o mesmo radical (cognatas) são:  
+ 
+a) "faltam" e "definições".    
+b) "trabalhos" e "preliminares".    
+
+===== PAGE 17 =====
+
+ 
+c) "sugerem" e "seguinte".    
+d) "faltam" e "sugerem".    
+e) "seguinte" e "sequência".    
+  
+38) TEXTO PARA A PRÓXIMA QUESTÃO:  
+ 
+ 
+ 
+ A leitura do texto permite afirmar que,  
+ 
+a) nos três primeiros quadrinhos, não se verifica a competência comunicativa dos sujeitos, uma vez que não 
+é compreensível o que eles dizem.    
+b) no último quadrinho, o estilo informal se manifesta motivado pela concordância verbal e pela presença da 
+interrogação.    
+c) no último quadrinh o, o estilo informal, marcado por alguns us os típicos da oralidade, contrasta com a 
+formalidade dos três primeiros quadrinhos.    
+d) no último quadrinho, o uso do verbo "ter" e da expressão "que nem" reforça a formalidade da linguagem 
+presente nos quadrinhos anteriores.    
+e) nos quadrinhos, percebe-se uma inadequação da linguagem, uma vez que é preciso optar entre a 
+formalidade e a informalidade.    
+  
+
+
+===== PAGE 18 =====
+
+ 
+39) Relacione as colunas e, em seguida, assinale a alternativa com a sequência correta. 
+ 
+1 – objeto direto (     ) Estava confiante na vitória. 
+2 – objeto indireto (     ) Há grandes festejos naquele bairro. 
+3 – complemento nominal (     ) Cedeu aos caprichos infantis. 
+ (     ) Não me convidou para o lanche. 
+ (     ) Peço-lhe paciência com os jovens. 
+  
+a) 3 - 2 - 1 - 1 - 2    
+b) 1 - 2 - 3 - 3 - 1    
+c) 2 - 1 - 3 - 2 - 3    
+d) 3 - 1 - 2 - 1 - 2    
+e) 1 - 1 -  2 - 3 - 2  
+ 
+40)  Nem tudo é como você quer 
+Nem tudo pode ser perfeito 
+Pode ser fácil se você 
+Ver o mundo de outro jeito 
+ 
+Se o que é errado ficou certo 
+As coisas são como elas são 
+Se a inteligência ficou cega 
+De tanta informação 
+ 
+Não Olhe Pra Trás. Capital Inicial. Disponível em: https://vagalume.com.br/capital-inicial/. Acesso em: 7 maio 
+2022 (fragmento). 
+ 
+No fragmento da música, observa-se um desvio linguís tico da norma culta da Língua também evidenciado 
+em:  
+ 
+a) Quando saí, os alunos ficaram sós em sala.    
+b) O pano e o tapete sujo estão na lavanderia. 
+c) Harmonia é bom para a convivência.    
+d) Quando você fazer o almoço, lave a louça. 
+e) Se fôssemos jovens, arriscaríamos mais. 
+    
+
